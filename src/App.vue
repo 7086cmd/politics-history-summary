@@ -33,14 +33,14 @@ onMounted(() => {
     }
   })
 })
-let panel = ref('')
+let panel = ref('22m')
 </script>
 
 <template>
   <div v-if="checked" @contextmenu.prevent @keyup.ctrl.p.prevent @keydown.ctrl.p.prevent @keyup.ctrl.v.precent>
-    <el-tabs tab-position="left" v-model="panel">
-      <el-tab-pane label="初二上期末"><v-md-editor v-model="Term20221" mode="preview"></v-md-editor></el-tab-pane>
-      <el-tab-pane label="初二下期中"><v-md-editor v-model="MidTerm20222" mode="preview"></v-md-editor></el-tab-pane>
+    <el-tabs tab-position="right" type="card" v-model="panel">
+      <el-tab-pane value="21f" label="初二上期末"><v-md-editor v-model="Term20221" mode="preview"></v-md-editor></el-tab-pane>
+      <el-tab-pane value="22m" label="初二下期中"><v-md-editor v-model="MidTerm20222" mode="preview"></v-md-editor></el-tab-pane>
     </el-tabs>
   </div>
 </template>
