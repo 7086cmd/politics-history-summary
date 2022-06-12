@@ -1,20 +1,21 @@
 <script setup lang="ts">
 import MidTerm20222 from './assets/summary-for-mid-term-2022-2.md'
 import Term20221 from './assets/summary-for-term-2022-1.md'
+import Term20222 from "./assets/summary-for-term-2022-2.md";
 import { ElMessageBox, ElLoading } from 'element-plus'
 import { ref, onMounted } from 'vue'
 // console.log(midterm)
 let checked = ref(false)
+let panel = ref('index')
 onMounted(() => {
-  ElMessageBox.prompt('请输入密码', '验证', {
+  ElMessageBox.prompt('请输入验证暗号', '验证', {
     // icon: 'warning',
     center: true,
     inputType: 'password',
     closeOnClickModal: false,
     closeOnPressEscape: false,
     closeOnHashChange: false,
-    inputValidator: (val: string) => (val === 'b4f96748-db2d-558a-8a84-c6cfc1be41eb' ? true : '密码错误'),
-    inputPlaceholder: '请输入暗号',
+    inputPlaceholder: '请输入验证暗号以查看',
     draggable: true,
     roundButton: true,
     showClose: false,
@@ -22,25 +23,29 @@ onMounted(() => {
     confirmButtonText: '确定',
     lockScroll: true,
   }).then(value => {
-    if (value.value === 'b4f96748-db2d-558a-8a84-c6cfc1be41eb') {
-      const loader = ElLoading.service({
-        text: '正在为您呈现期中复习提纲，请稍后...',
-      })
-      setTimeout(() => {
-        checked.value = true
-        loader.close()
-      }, 3000)
+    if (value.value === '445250d7-6b4b-4ebe-8549-e9f2d4a7976b') {
+      checked.value = true;
+      panel.value = "21f";
+    } else if (value.value === "e6708dd7-2336-4b09-af0e-9f74d764c95c") {
+      checked.value = true;
+      panel.value = "22m";
+    } else if (value.value === "3cc4424a-80e5-4c20-9b13-54a878824dc0") {
+      checked.value = true;
+      panel.value = "22f";
+    } else {
+      window.location.reload();
     }
-  })
+  });
 })
-let panel = ref('22m')
 </script>
 
 <template>
   <div v-if="checked" @contextmenu.prevent @keyup.ctrl.p.prevent @keydown.ctrl.p.prevent @keyup.ctrl.v.precent>
     <el-tabs tab-position="right" type="card" v-model="panel">
+      <el-tab-pane value="index" label="首页">请选择内容。</el-tab-pane>
       <el-tab-pane value="21f" label="初二上期末"><v-md-editor v-model="Term20221" mode="preview"></v-md-editor></el-tab-pane>
       <el-tab-pane value="22m" label="初二下期中"><v-md-editor v-model="MidTerm20222" mode="preview"></v-md-editor></el-tab-pane>
+      <el-tab-pane value="22f" label="初二下期末"><v-md-editor v-model="MidTerm20222" mode="preview"></v-md-editor></el-tab-pane>
     </el-tabs>
   </div>
 </template>
