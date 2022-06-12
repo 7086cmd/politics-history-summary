@@ -4,7 +4,7 @@ export default {
     if (/\.(md)$/.test(id)) {
       console.log('Markdown', src.length, id)
       return {
-        code: `export default \`${src}\``,
+        code: `export default \`${src.replaceAll('`', '\\`')}\``,
         map: null,
       }
     }
