@@ -49,6 +49,8 @@ export default defineConfig({
               link: "/道德与法治/七年级上册/第四单元 生命的思考/",
             },
           ],
+          collapsed: true,
+          collapsible: true,
         },
         {
           text: "七年级下册",
@@ -70,6 +72,8 @@ export default defineConfig({
               link: "/道德与法治/七年级下册/第四单元 走进法治天地/",
             },
           ],
+          collapsed: true,
+          collapsible: true,
         },
         {
           text: "八年级上册",
@@ -91,6 +95,8 @@ export default defineConfig({
               link: "/道德与法治/八年级上册/第四单元 维护国家利益/",
             },
           ],
+          collapsed: true,
+          collapsible: true,
         },
       ],
       "/中国历史/": [
@@ -131,13 +137,49 @@ export default defineConfig({
         },
       ],
       "/人文地理/": [
-        { text: "第一单元 人在社会中生活", items: [
-          { text: "第一课 我的家在哪里", link: "/人文地理/第一单元 人在社会中生活/第一课 我的家在哪里/" },
-          { text: "第二课 乡村与城市", link: "/人文地理/第一单元 人在社会中生活/第二课 乡村与城市/" },
-          { text: "综合探究一 从地图上获取信息", link: "/人文地理/第一单元 人在社会中生活/综合探究一 从地图上获取信息/" },
-        ] },
-        { text: "第二单元 人类共同生活的地球", items: [] },
-      ]
+        {
+          text: "第一单元 人在社会中生活",
+          items: [
+            {
+              text: "第一课 我的家在哪里",
+              link: "/人文地理/第一单元 人在社会中生活/第一课 我的家在哪里/",
+            },
+            {
+              text: "第二课 乡村与城市",
+              link: "/人文地理/第一单元 人在社会中生活/第二课 乡村与城市/",
+            },
+            {
+              text: "综合探究一 从地图上获取信息",
+              link: "/人文地理/第一单元 人在社会中生活/综合探究一 从地图上获取信息/",
+            },
+          ],
+          collapsed: true,
+          collapsible: true,
+        },
+        {
+          text: "第二单元 人类共同生活的世界",
+          items: [
+            {
+              text: "第一课 大洲和大洋",
+              link: "/人文地理/第二单元 人类共同生活的世界/第一课 大洲和大洋/",
+            },
+            {
+              text: "第二课 自然环境",
+              link: "/人文地理/第二单元 人类共同生活的世界/第二课 自然环境/",
+            },
+            {
+              text: "第三课 世界大家庭",
+              link: "/人文地理/第二单元 人类共同生活的世界/第三课 世界大家庭/",
+            },
+            {
+              text: "综合探究二 从地球仪上看世界",
+              link: "/人文地理/第二单元 人类共同生活的世界/综合探究二 从地球仪上看世界/",
+            },
+          ],
+          collapsed: true,
+          collapsible: true,
+        },
+      ],
     },
     footer: {
       message: "按照 MIT License 发布内容",
@@ -157,6 +199,6 @@ export default defineConfig({
     docFooter: {
       prev: "上一章",
       next: "下一章",
-    }
+    },
   },
 });

@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /目录
+      link: /开始学习/
     - theme: alt
       text: 查看源码
       link: https://github.com/7086cmd/politics-history-summary
