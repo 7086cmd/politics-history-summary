@@ -236,8 +236,13 @@ export default defineConfig({
           ],
           collapsed: true,
           collapsible: true,
-        }
+        },
       ],
+    },
+    algolia: {
+      appId: "NJS8433FRA",
+      apiKey: "7c80a203400079b048e02bdfe4f555bd",
+      indexName: "zsd_summary",
     },
     footer: {
       message: "按照 MIT License 发布内容",
