@@ -214,6 +214,29 @@ export default defineConfig({
           collapsed: true,
           collapsible: true,
         },
+        {
+          text: "第四单元 中国各族人民的家园",
+          items: [
+            {
+              text: "第一课 国土与人民",
+              link: "/人文地理/第四单元 中国各族人民的家园/第一课 国土与人民/",
+            },
+            {
+              text: "第二课 山川秀美",
+              link: "/人文地理/第四单元 中国各族人民的家园/第二课 山川秀美/",
+            },
+            {
+              text: "第三课 地形差异显著",
+              link: "/人文地理/第四单元 中国各族人民的家园/第三课 地形差异显著/",
+            },
+            {
+              text: "综合探究四 走进台湾",
+              link: "/人文地理/第四单元 中国各族人民的家园/综合探究四 走进台湾/",
+            }
+          ],
+          collapsed: true,
+          collapsible: true,
+        }
       ],
     },
     footer: {
