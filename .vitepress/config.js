@@ -232,7 +232,7 @@ export default defineConfig({
             {
               text: "综合探究四 走进台湾",
               link: "/人文地理/第四单元 中国各族人民的家园/综合探究四 走进台湾/",
-            }
+            },
           ],
           collapsed: true,
           collapsible: true,
@@ -243,6 +243,10 @@ export default defineConfig({
       appId: "NJS8433FRA",
       apiKey: "7c80a203400079b048e02bdfe4f555bd",
       indexName: "zsd_summary",
+    },
+    localeLinks: {
+      text: "简体中文",
+      items: [],
     },
     footer: {
       message: "按照 MIT License 发布内容",
