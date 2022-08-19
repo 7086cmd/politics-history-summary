@@ -169,7 +169,7 @@ function summary_hg() {
       collapsed: true,
       collapsible: true,
     },
-  ]
+  ];
 }
 
 function summary_ml() {
@@ -243,7 +243,30 @@ function summary_ml() {
       collapsed: true,
       collapsible: true,
     },
-  ]
+    {
+      text: "八年级下册",
+      items: [
+        {
+          text: "第一单元 坚持宪法至上",
+          link: "/道德与法治/八年级下册/第一单元 坚持宪法至上/",
+        },
+        {
+          text: "第二单元 理解权利义务",
+          link: "/道德与法治/八年级下册/第二单元 理解权利义务/",
+        },
+        {
+          text: "第三单元 人民当家作主",
+          link: "/道德与法治/八年级下册/第三单元 人民当家作主/",
+        },
+        {
+          text: "第四单元 崇尚法治精神",
+          link: "/道德与法治/八年级下册/第四单元 崇尚法治精神/",
+        },
+      ],
+      collapsed: true,
+      collapsible: true,
+    }
+  ];
 }
 
 function summary_his() {
@@ -322,5 +345,36 @@ function summary_his() {
       collapsed: true,
       collapsible: true,
     },
-  ]
+    {
+      text: "现代史",
+      items: [
+        {
+          text: "第一单元 中华人民共和国的成立和巩固",
+          link: "/中国历史/现代史/第一单元 中华人民共和国的成立和巩固/",
+        },
+        {
+          text: "第二单元 社会主义制度的建立与社会主义建设的探索",
+          link: "/中国历史/现代史/第二单元 社会主义制度的建立与社会主义建设的探索/",
+        },
+        {
+          text: "第三单元 中国特色社会主义道路",
+          link: "/中国历史/现代史/第三单元 中国特色社会主义道路/",
+        },
+        {
+          text: "第四单元 民族团结与祖国统一",
+          link: "/中国历史/现代史/第四单元 民族团结与祖国统一/",
+        },
+        {
+          text: "第五单元 国防建设与外交成就",
+          link: "/中国历史/现代史/第五单元 国防建设与外交成就/",
+        },
+        {
+          text: "第六单元 科技文化与社会生活",
+          link: "/中国历史/现代史/第六单元 科技文化与社会生活/",
+        },
+      ],
+      collapsed: true,
+      collapsible: true,
+    },
+  ];
 }
