@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "mermaid": "^9.1.6",
     "vitepress": "^1.0.0-alpha.8",
+    "vitepress-plugin-mermaid": "^1.0.2",
     "vue": "^3.2.37"
   }
 }
