@@ -1,9 +1,9 @@
-# 世界历史
+# The History of the World
 
-::: warning 重要提醒 和中国古代史一样，世界历史由2册课本讲述。
+::: warning important reminders Llike the ancient history of China, history of the world is described by two textbooks.
 
-这里，由于九年级下册的内容和九年级上册内容接壤（都是古代史），因此在这里合并，九年级下册的单元的计数延续于九年级上册。但是课时九下（第五单元开始）从第1课开始计 ~~（主要是当时没弄清楚~~ :::
+Here, because of the proximity of the contents of the Ninth Subclass to the ninth-class content (both ancient history), the unit in the Ninth Subclass continues to be counted in the ninth grade.But the class hours are 9 (start of unit 5) starting with class 1 ~~(mainly it was not clear at the time~~ :::
 
-::: tip 提示
-请从左侧的菜单中选择内容阅读或学习
-:::
+::: tip prompts
+to read or learn from the menu on the left
+::::
