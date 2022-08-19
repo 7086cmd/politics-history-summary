@@ -1,35 +1,35 @@
-# 资源总页
+# Total Resource Page
 
-由于 VitePress 和 Markdown 在引入图片中的各种问题，所以把所有的图片等资源全部放到这里来了。
+Due to various problems with the introduction of VitePress and Markdown in the images, all resources such as pictures have been put here.
 
-图片的命名规范：
+Name specification of image:
 
-科目 ID + 分册 ID + 单元（数字） + 章节（数字） + 图片序号.图片后缀
+Subject ID + Book ID + Unit (Number) + Chapter (Number) + Image Series.suffix
 
-| 科目名称  | 科目 ID |
-| ----- | ----- |
-| 道德与法治 | ml    |
-| 中国历史  | ch    |
-| 世界历史  | hw    |
-| 人文地理  | hg    |
+| Subject Name             | Subject ID |
+| ------------------------ | ---------- |
+| Morality and Rule of Law | ml         |
+| Chinese History          | ch         |
+| The History of The World | hw         |
+| Human Geography          | hg         |
 
-| 分册名称       | 分册 ID |
-| ---------- | ----- |
-| 道德与法治 七年级上 | g71   |
-| 道德与法治 七年级下 | g72   |
-| 道德与法治 八年级上 | g81   |
-| 道德与法治 八年级下 | g82   |
-| 道德与法治 九年级上 | g91   |
-| 道德与法治 九年级下 | g92   |
+| Book Name                                 | Book ID |
+| ----------------------------------------- | ------- |
+| Book 1, Grade 7, Morality and Rule of Law | g71     |
+| Book 2, Grade 7, Morality and Rule of Law | g72     |
+| Book 1, Grade 8, Morality and Rule of Law | g81     |
+| Book 2, Grade 8, Morality and Rule of Law | g82     |
+| Book 1, Grade 9, Morality and Rule of Law | g91     |
+| Book 2, Grade 9, Morality and Rule of Law | g92     |
 
-| 分册名称     | 分册 ID |
-| -------- | ----- |
-| 中国历史 古代史 | ah    |
-| 中国历史 近代史 | rh    |
-| 中国历史 现代史 | mh    |
+| Book Name                | Book ID |
+| ------------------------ | ------- |
+| Ancient History of China | ah      |
+| Recent History of China  | rh      |
+| Modern History of China  | mh      |
 
-::: tip 提醒
-世界历史和人文地理的图片是没有分册的，所以没有分册 ID。
+::: tip 
+World history and humanities images have no fascicles, so there is no book ID.
 :::
 
-::: warning 地理内容图片分类提醒 地理有**探究内容**，计为*本单元内最后一课*，同时不存在*框*的说法。 :::
+::: warning geo-content category alert Geography class has**exploration content**counted as*last lesson in this module*and does not exist for*block*. :::
