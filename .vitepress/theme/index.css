@@ -1,0 +1,17 @@
+body {
+  user-select: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: unset;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+mark {
+  background-color: #43B88477;
+}
+
+body::selection {
+  background-color: #43B884bb;
+}
