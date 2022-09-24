@@ -15,3 +15,23 @@ mark {
 body::selection {
   background-color: #43B884bb;
 }
+
+body {
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  page-break-before: avoid;
+}
+
+@media print {
+  footer {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  .VPLocalNav {
+    display: none !important;
+  }
+}

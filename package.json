@@ -1,5 +1,5 @@
 {
-  "name": "社政资料总整理",
+  "name": "zsd-summary",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,5 +14,6 @@
     "vitepress": "^1.0.0-alpha.8",
     "vitepress-plugin-mermaid": "^1.0.2",
     "vue": "^3.2.37"
-  }
+  },
+  "type": "module"
 }
