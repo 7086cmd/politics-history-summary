@@ -66,6 +66,7 @@ export default defineConfig({
   },
   lastUpdated: true,
   lang: "zh-CN",
+  ignoreDeadLinks: true,
   cleanUrls: "without-subfolders",
 });
 
