@@ -1,4 +1,9 @@
 
+# 政史地综合提纲
+
+[[TOC]]
+
+
 # 道德与法治
 
 <div class="divider"></div>

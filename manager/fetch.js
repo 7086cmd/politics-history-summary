@@ -1,7 +1,12 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { createFileList } from "./list.js";
 
-let content = ``
+let content = `
+# 政史地综合提纲
+
+[[TOC]]
+
+`
 
 const filelist = createFileList();
 
