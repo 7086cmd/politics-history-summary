@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 查看源码
       link: https://github.com/7086cmd/politics-history-summary
+    - theme: brand
+      text: 打印资料
+      link: /print
 
 features:
   - icon: ⚡️
