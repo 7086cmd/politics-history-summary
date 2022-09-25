@@ -1,5 +1,8 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { createFileList } from "./list.js";
+import { resolve } from "node:path";
+
+const __dirname = resolve();
 
 let content = `
 # 政史地综合提纲
@@ -45,4 +48,4 @@ If you do so, you will be punished.
 **This repo will be  public after 2023.6**
 `
 
-writeFileSync("print.md", content);
+writeFileSync(resolve(__dirname, "print.md"), content);
