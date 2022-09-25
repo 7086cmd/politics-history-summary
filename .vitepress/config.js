@@ -43,7 +43,7 @@ export default defineConfig({
       items: [],
     },
     footer: {
-      message: "按照 MIT License 发布内容",
+      message: "These content are followed CC-BY&NC&ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.",
       copyright: "Copyright © 2020-2023 7086cmd",
     },
     socialLinks: [
@@ -373,10 +373,6 @@ function summary_ch() {
       text: "中国古代史",
       items: [
         {
-          text: "概论",
-          link: "/中国历史/古代史/",
-        }, 
-        {
           text: "第一单元 史前时期：中国境内早期人类与文明的起源",
           link: "/中国历史/古代史/第一单元 史前时期：中国境内早期人类与文明的起源/",
         },
@@ -411,10 +407,6 @@ function summary_ch() {
     {
       text: "中国近代史",
       items: [
-        {
-          text: "概论",
-          link: "/中国历史/近代史/",
-        },
         {
           text: "第一单元 中国开始沦为半殖民地半封建社会",
           link: "/中国历史/近代史/第一单元 中国开始沦为半殖民地半封建社会/",
@@ -455,10 +447,6 @@ function summary_ch() {
       text: "中国现代史",
       items: [
         {
-          text: "概论",
-          link: "/中国历史/现代史/",
-        },
-        {
           text: "第一单元 中华人民共和国的成立和巩固",
           link: "/中国历史/现代史/第一单元 中华人民共和国的成立和巩固/",
         },
@@ -495,10 +483,6 @@ function summary_hw() {
       text: "世界古代史",
       items: [
         {
-          text: "概论",
-          link: "/世界历史/古代史/",
-        },
-        {
           text: "第一单元 古代亚非文明",
           link: "/世界历史/古代史/第一单元 古代亚非文明/",
         },
@@ -521,10 +505,6 @@ function summary_hw() {
     {
       text: "世界近代史",
       items: [
-        {
-          text: "概论",
-          link: "/世界历史/近代史/",
-        },
         {
           text: "第五单元 走向近代",
           link: "/世界历史/近代史/第五单元 走向近代/",
@@ -552,10 +532,6 @@ function summary_hw() {
     {
       text: "世界现代史",
       items: [
-        {
-          text: "概论",
-          link: "/世界历史/现代史/",
-        },
         {
           text: "第十单元 第一次世界大战和战后初期的世界",
           link: "/世界历史/现代史/第十单元 第一次世界大战和战后初期的世界/",

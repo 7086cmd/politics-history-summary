@@ -1,38 +1,39 @@
-import config from "../.vitepress/config.js";
-import { resolve } from "node:path";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { createFileList } from "./list.js";
 
-const { nav, sidebar } = config.themeConfig
+let content = ``
 
-// console.log(nav);
-// console.log(sidebar);
+const filelist = createFileList();
 
-// step 1 flatten
-const __dirname = resolve("")
-
-const navs = [];
-
-nav.forEach((element) => {
-  if ("items" in element) {
-    navs.push(...element.items);
+filelist.forEach(file => {
+  if (existsSync(file)) {
+    const filec = readFileSync(file, "utf-8").toString();
+    content += `
+${filec}
+<div class="divider"></div>
+`;
   } else {
-    navs.push(element);
+    content += `
+${file} is not found.
+<div class="divider"></div>
+`;
   }
 });
 
-// console.log(navs);
+content += `
+<div class="divider"></div>
 
-navs.forEach(block => {
-  if (block.link in sidebar) {
-    const content = sidebar[block.link];
-    // const { text, items } = content;
-    // console.log(text, items, block.link)
-    content.forEach(book => {
-      const { text, items } = book;
-      // console.log(text, items.length, block.link);
-      items.forEach(page => {
-        const content = resolve(__dirname, page.link.replace("\\", "").replace("/", ""));
-        console.log(content)
-      });
-    });
-  };
-});
+Author: [7086cmd](https://github.com/7086cmd).<br>
+Realname: Wu Chengyu.<br>
+Now is in a middle school in China.<br>
+
+<p style="font-size: 24px">
+These content are followed CC-BY&NC&ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.
+
+If you do so, you will be punished.
+</p>
+
+**This repo will be  public after 2023.6**
+`
+
+writeFileSync("print.md", content);

@@ -34,4 +34,9 @@ body {
   .VPLocalNav {
     display: none !important;
   }
+
+  .divider {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
 }
