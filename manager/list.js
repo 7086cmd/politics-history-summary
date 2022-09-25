@@ -19,7 +19,11 @@ export function createFileList() {
 
   function createIndex(path) {
     console.log(path)
-    return resolve(__dirname, path.replace("/", "").replace("\\", ""), "index.md");
+    if (path.includes("整活资料")){
+      return resolve(__dirname, path.replace("/", "").replace("\\", "") + ".md");
+    } else {
+      return resolve(__dirname, path.replace("/", "").replace("\\", ""), "index.md");
+    }
   }
 
   navs.forEach((block) => {
