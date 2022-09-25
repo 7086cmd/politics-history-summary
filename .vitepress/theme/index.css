@@ -35,7 +35,7 @@ body {
     display: none !important;
   }
 
-  .divider {
+  h1 {
     break-before: page !important;
     page-break-before: always !important;
   }
