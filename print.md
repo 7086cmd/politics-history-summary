@@ -296,10 +296,6 @@
 ---
 <div class="divider"></div>
 
----
-important: true
----
-
 ### 第四单元 生命的思考
 
 ---
