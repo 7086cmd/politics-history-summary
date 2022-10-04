@@ -1,0 +1,65 @@
+
+    - [第三课 共同关注的环境问题](#第三课-共同关注的环境问题)<br>
+      - [第一框 愈演愈烈的环境问题](#第一框-愈演愈烈的环境问题)<br>
+      - [第二框 加快改善我国的生态环境](#第二框-加快改善我国的生态环境)<br>
+- [Copyrights](#copyrights)<br>
+
+<div class="divider"></div>
+
+
+<style>
+main {
+  /* font-family: "仿宋" !important */
+}
+</style>
+### 第三课 共同关注的环境问题
+
+---
+
+::: warning 重要提醒
+PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问题，是中考中的必考题目，一般以 **分析向大题出现，占据 8 分左右** 。
+:::
+
+---
+
+#### 第一框 愈演愈烈的环境问题
+
+---
+
+#### 第二框 加快改善我国的生态环境
+
+1. 环境问题分为：<u>环境污染</u>、<u>生态破坏</u>两类。
+
+2. 我国主要的生态环境问题是<u>荒漠化</u>、<u>水土流失</u>；<br>
+   我国主要的环境污染问题是<u>工业中产生的废气、废水及固体废弃物污染</u>。<br>
+   环境问题的实质是<u>发展问题</u>。
+
+3. 加快改善我国生态环境的原因：
+    1. 生态环境重要性角度：<u>生态环境是生存之本、发展之源</u>
+    2. 环境现状及危害角度：
+       现状：<u>目前，我国环境形式依然不容乐观、人民日益增长的对美好生态环境的需求，还不能得到充分的满足。</u>
+       危害：<u>环境问题不仅危害人们的健康，制约了我国的经济发展，还影响社会安定。成为威胁中华民族生存与发展的重大问题。</u>
+    3. 意义角度：
+        1. <u>保护和改善环境，满足人民日益增长的对美好生态环境的需求；</u>
+        2. <u>有利于推进生态文明建设，促进经济社会可持续发展；</u>
+        3. <u>有利于建设美丽中国，实现中华民族的永续发展。</u>
+
+---
+
+<div class="divider"></div>
+
+<div class="divider"></div>
+
+# Copyrights
+
+Author: [7086cmd](https://github.com/7086cmd).<br>
+Realname: Wu Chengyu.<br>
+Now is in a middle school in China.<br>
+
+<p style="font-size: 24px">
+These content are followed CC BY-NC-ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.
+
+If you do so, you will be punished.
+</p>
+
+**This repo will be  public after 2023.6**

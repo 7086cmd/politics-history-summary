@@ -1,0 +1,63 @@
+
+    - [第三单元 勇担社会责任](#第三单元-勇担社会责任)<br>
+      - [第六课 责任与角色同在](#第六课-责任与角色同在)<br>
+      - [第七课 积极奉献社会](#第七课-积极奉献社会)<br>
+- [Copyrights](#copyrights)<br>
+
+<div class="divider"></div>
+
+
+<style>
+main {
+  /* font-family: "仿宋" !important */
+}
+</style>
+### 第三单元 勇担社会责任
+
+---
+
+#### 第六课 责任与角色同在
+
+1. 责任的来源<br>
+   责任来自<u>对他人的承诺</u>、<u>职业要求</u>、<u>道德规范</u>、<u>法律规定</u>等。
+
+2. 作为社会的一员，我们每个人首先要对<u>自己</u>负责。
+
+3. 承担责任的代价是什么<br>
+   承担责任不仅意味着付出<u>时间</u>、<u>精力</u>和<u>金钱</u>，而且意味着可能因为做得不好而受到<u>责备</u>，甚至受到<u>处罚</u>。
+
+4. 承担责任会获得哪些回报
+
+    1. 承担责任往往伴随着获得回报的权利。这种回报既包括<u>物质方面</u>，又包括<u>精神方面</u>
+    2. 更重要的是<u>精神方面</u>的回报，如<u>良好的自我感觉</u>、<u>获得新的知识和技能</u>、<u>赢得他人的尊重和赞许</u>等。
+
+5. 如何做一个负责任的人
+
+    1. 当可以选择自己承担的责任时，我们要作出<u>正确的评估</u>、<u>合理的选择</u>；一旦作出选择，就应该义无反顾地担当起应负的责任。
+    2. 虽然有些应该做的事情不是我们自愿选择的，但是我们仍然应该<u>自觉承担</u>相应的责任。
+    3. 履行社会责任应<u>不计代价和回报</u>。
+    4. 我们应努力提升<u>自身素质</u>，增强<u>履行责任的能力</u>，勇于承担责任。
+
+---
+
+#### 第七课 积极奉献社会
+
+---
+
+<div class="divider"></div>
+
+<div class="divider"></div>
+
+# Copyrights
+
+Author: [7086cmd](https://github.com/7086cmd).<br>
+Realname: Wu Chengyu.<br>
+Now is in a middle school in China.<br>
+
+<p style="font-size: 24px">
+These content are followed CC BY-NC-ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.
+
+If you do so, you will be punished.
+</p>
+
+**This repo will be  public after 2023.6**

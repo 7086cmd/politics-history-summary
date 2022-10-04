@@ -24,7 +24,7 @@ export default defineConfig({
       {
         text: "整活资料",
         link: "/整活资料/"
-      },
+      }
     ],
     sidebar: {
       "/道德与法治/": summary_ml(),
@@ -564,6 +564,10 @@ function summary_res() {
         {
           text: "《读本》默写提纲",
           link: "/整活资料/道德与法治/《读本》默写提纲",
+        },
+        {
+          text: "九上1-3课默写",
+          link: "/整活资料/道德与法治/九上1-3课默写",
         }
       ],
     },

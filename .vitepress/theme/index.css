@@ -20,6 +20,7 @@ body {
   page-break-inside: avoid;
   page-break-after: avoid;
   page-break-before: avoid;
+  /* font-family: "仿宋" !important; */
 }
 
 @media print {
@@ -35,8 +36,12 @@ body {
     display: none !important;
   }
 
-  .divider {
+  h1 {
     break-before: page !important;
     page-break-before: always !important;
+  }
+
+  body {
+    /* font-family: "仿宋" !important; */
   }
 }
