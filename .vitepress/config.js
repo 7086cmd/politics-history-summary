@@ -32,6 +32,7 @@ export default defineConfig({
       "/世界历史/": summary_hw(),
       "/人文地理/": summary_hg(),
       "/整活资料/": summary_res(),
+      "/语文/": summary_chinese(),
     },
     algolia: {
       appId: "NJS8433FRA",
@@ -599,6 +600,20 @@ function summary_res() {
           link: "/整活资料/历史与社会/八下历史与社会复习提纲",
         },
       ],
+    }
+  ]
+}
+
+function summary_chinese() {
+  return [
+    {
+      text: "名著阅读",
+      items: [
+        {
+          text: "《艾青诗选》",
+          link: "/语文/名著阅读/艾青诗选/",
+        }
+      ]
     }
   ]
 }
