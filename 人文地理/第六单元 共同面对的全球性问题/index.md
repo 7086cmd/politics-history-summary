@@ -17,3 +17,7 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 同时，该部分内容还会在 [道法九年级上册第六课](/道德与法治/九年级上册/第三单元%20文明与家园/#第六课-建设美丽中国) 部分再次出现。
 :::
+
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

@@ -128,3 +128,7 @@
     3. <u>强化法律对道德建设的促进作用，强化到的对法治文化的支撑作用</u>。
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-g91-2-3.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/ml-g91-2-4.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>

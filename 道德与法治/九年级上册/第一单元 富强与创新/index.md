@@ -148,3 +148,9 @@
 10. 教育的重要性 （国家角度）：<u>教育是民族振兴、社会进步的基石，是提高国民素质，培养创新型人才、促进人的全面发展的根本途径。</u>（个人角度见[八下第二单元](/道德与法治/八年级下册/第二单元%20理解权利义务/)内容）
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-g91-1-1-1.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/ml-g91-1-1-2.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/ml-g91-1-2.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>

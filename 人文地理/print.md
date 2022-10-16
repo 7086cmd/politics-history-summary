@@ -1261,6 +1261,10 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 同时，该部分内容还会在 [道法九年级上册第六课](/道德与法治/九年级上册/第三单元%20文明与家园/#第六课-建设美丽中国) 部分再次出现。
 :::
 
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第一课 不断变化的人口问题
@@ -1442,14 +1446,10 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 # Copyrights
 
-Author: [7086cmd](https://github.com/7086cmd).<br>
-Realname: Wu Chengyu.<br>
-Now is in a middle school in China.<br>
+作者: [7086cmd](https://github.com/7086cmd).<br>
 
 <p style="font-size: 24px">
-These content are followed CC BY-NC-ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.
-
-If you do so, you will be punished.
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**This repo will be  public after 2023.6**
+**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**

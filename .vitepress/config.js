@@ -569,6 +569,10 @@ function summary_res() {
         {
           text: "九上1-3课默写",
           link: "/整活资料/道德与法治/九上1-3课默写",
+        },
+        {
+          text: "PRED 问题",
+          link: "/整活资料/道德与法治/PRED问题",
         }
       ],
     },
