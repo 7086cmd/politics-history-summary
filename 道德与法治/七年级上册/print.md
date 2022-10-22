@@ -1,4 +1,63 @@
 
+  <style>
+  #title {
+    padding-top: 40%;
+    font-size: 96px;
+    padding-bottom: 24%;
+  }
+
+  #ending {
+    padding-top: 60%;
+    font-size: 48px;
+    padding-bottom: 12%;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+  #inform {
+    padding-right: 8%;
+    font-size: 18px;
+  }
+
+  .topic {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    font-size: 48px;
+  }
+</style>
+<div class="center">
+  <div id="title">{{ printTitle }}</div>
+</div>
+<div class="right">
+  <p id="inform">姓名：________________</p>
+  <p id="inform">学号：________________</p>
+  <p id="inform">班级：________________</p>
+  <p id="inform">学校：________________</p>
+
+  <hr />
+  <div>
+    {{ printDate }}<br />
+    制作：<a href="https://github.com/7086cmd/">7086cmd</a><br />
+    仓库地址：<a href="https://github.com/7086cmd/politics-history-summary"
+      >https://github.com/7086cmd/politics-history-summary</a
+    >
+  </div>
+</div>
+
+
+<div class="divider_top"></div>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div class="topic">目录</div>
+</div>
+
   - [七年级上册](#七年级上册)<br>
     - [第一单元 成长的节拍](#第一单元-成长的节拍)<br>
       - [第一课 中学时代](#第一课-中学时代)<br>
@@ -14,16 +73,10 @@
       - [第八课 探问生命](#第八课-探问生命)<br>
       - [第九课 珍视生命](#第九课-珍视生命)<br>
       - [第十课 绽放生命之花](#第十课-绽放生命之花)<br>
-- [Copyrights](#copyrights)<br>
 
 <div class="divider"></div>
 
 
-<style>
-main {
-  /* font-family: "仿宋" !important */
-}
-</style>
 ## 七年级上册
 
 七年级上册的内容，中考要点 **只有 [第四单元 生命的思考](./%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%20%E7%94%9F%E5%91%BD%E7%9A%84%E6%80%9D%E8%80%83/)** 。
@@ -35,6 +88,10 @@ main {
 ---
 
 #### 第一课 中学时代
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 中学时代的重要性
 
@@ -80,6 +137,10 @@ main {
 
 #### 第二课 学习新天地
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 初中阶段的学习内容
    <u>包括知识的获取、能力的培养以及如何做人。</u>
 
@@ -110,6 +171,10 @@ main {
 ---
 
 #### 第三课 发现自己
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 正确认识自己的重要性、意义
 
@@ -168,6 +233,10 @@ main {
 
 #### 第四课 友谊与成长同行
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 朋友圈的变化
 
     1. 随着年龄的增长，交往范围扩大了，朋友圈也扩大了，交往内容更丰富了。
@@ -196,6 +265,10 @@ main {
 ---
 
 #### 第五课 交友的智慧
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 如何建立友谊
 
@@ -233,6 +306,10 @@ main {
 ---
 
 #### 第六课 师生之间
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 教师的作用
 
@@ -273,6 +350,10 @@ main {
 ---
 
 #### 第七课 亲情之爱
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 家庭是<u>由婚姻关系、血缘关系或收养关系结合成的亲属生活组织</u>。
 
@@ -360,6 +441,10 @@ main {
 
 #### 第八课 探问生命
 
+::: tip 提醒
+中考考点！重点背诵！
+:::
+
 1. 生命的特点
 
     1. <u>生命来之不易；</u>
@@ -394,6 +479,10 @@ main {
 ---
 
 #### 第九课 珍视生命
+
+::: tip 提醒
+中考考点！重点背诵！
+:::
 
 1. 如何爱护身体
 
@@ -453,6 +542,10 @@ main {
 
 #### 第十课 绽放生命之花
 
+::: tip 提醒
+中考考点！重点背诵！
+:::
+
 1. 怎样的一生是值得的
 
     1. <u>能够活出自己的人生，自食其力，实现自我价值；</u>
@@ -502,7 +595,7 @@ main {
 
 <div class="divider"></div>
 
-# Copyrights
+# 版权声明
 
 作者: [7086cmd](https://github.com/7086cmd).<br>
 
@@ -510,4 +603,23 @@ main {
 本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**
+<script setup>
+import { ref } from "vue";
+
+const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
+.split("|")[0]
+.trim());
+
+const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+
+</script>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div id="ending">初中政史地提纲整理</div>
+</div>
+
+<div class="right">
+  <p>未经作者许可禁售。</p>
+</div>

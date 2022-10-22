@@ -1,4 +1,63 @@
 
+  <style>
+  #title {
+    padding-top: 40%;
+    font-size: 96px;
+    padding-bottom: 24%;
+  }
+
+  #ending {
+    padding-top: 60%;
+    font-size: 48px;
+    padding-bottom: 12%;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+  #inform {
+    padding-right: 8%;
+    font-size: 18px;
+  }
+
+  .topic {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    font-size: 48px;
+  }
+</style>
+<div class="center">
+  <div id="title">{{ printTitle }}</div>
+</div>
+<div class="right">
+  <p id="inform">姓名：________________</p>
+  <p id="inform">学号：________________</p>
+  <p id="inform">班级：________________</p>
+  <p id="inform">学校：________________</p>
+
+  <hr />
+  <div>
+    {{ printDate }}<br />
+    制作：<a href="https://github.com/7086cmd/">7086cmd</a><br />
+    仓库地址：<a href="https://github.com/7086cmd/politics-history-summary"
+      >https://github.com/7086cmd/politics-history-summary</a
+    >
+  </div>
+</div>
+
+
+<div class="divider_top"></div>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div class="topic">目录</div>
+</div>
+
   - [七年级下册](#七年级下册)<br>
     - [第一单元 青春时光](#第一单元-青春时光)<br>
       - [第一课 青春的邀约](#第一课-青春的邀约)<br>
@@ -14,16 +73,10 @@
     - [第四单元 走进法治天地](#第四单元-走进法治天地)<br>
       - [第九课 法律在我们身边](#第九课-法律在我们身边)<br>
       - [第十课 法律伴我们成长](#第十课-法律伴我们成长)<br>
-- [Copyrights](#copyrights)<br>
 
 <div class="divider"></div>
 
 
-<style>
-main {
-  /* font-family: "仿宋" !important */
-}
-</style>
 ## 七年级下册
 
 七年级下册的内容，中考要点，只有 **[第四单元 走进法治天地](./%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%20%E8%B5%B0%E8%BF%9B%E6%B3%95%E6%B2%BB%E5%A4%A9%E5%9C%B0/)**，而且是对于法律的初探，处于重中之重。
@@ -35,6 +88,10 @@ main {
 ---
 
 #### 第一课 青春的邀约
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 什么是青春期<br>
    青春期一般指人的发育过程中，介于儿童期和成年期之间的过渡期。它是继婴儿期后，人生第二个生长发育的高峰期。
@@ -98,6 +155,10 @@ main {
 
 #### 第二课 青春的心弦
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 男女性别差异的表现
 
     1. 男女性别特征既表现在生理上，也表现在心理和社会行为上。
@@ -129,6 +190,10 @@ main {
 ---
 
 #### 第三课 青春的证明
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 为什么要自信
 
@@ -170,6 +235,10 @@ main {
 ---
 
 #### 第四课 解开情绪的面纱
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 人的基本情绪有<u>喜</u>、<u>怒</u>、<u>哀</u>、<u>惧</u>
 
@@ -218,6 +287,10 @@ main {
 
 #### 第五课 品出情感的韵味
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 情绪与情感的区别与联系
 
     | **情绪**                                         | **情感**                                             |
@@ -264,6 +337,10 @@ main {
 
 #### 第六课 “我”和“我们”
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 集体是人们联合起来的<u>有组织</u>的整体。集体并不是成员的简单相加，而是有<u>共同目标</u>、<u>分工明确</u>的整体。
 
 2. 如何理解集体的温暖
@@ -286,6 +363,10 @@ main {
 ---
 
 #### 第七课 共奏和谐乐章
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 个人意愿与集体规则的关系
 
@@ -341,6 +422,10 @@ main {
 
 #### 第九课 法律在我们身边
 
+::: tip 提醒
+中考考点！重点背诵！
+:::
+
 1. 生活与法律息息相关的表现
 
     1. <u>生活需要法律来调整。</u>每一步法律都是因生活的需要而制定和颁布的，又对生活加以规范和调整
@@ -393,6 +478,10 @@ main {
 
 #### 第十课 法律伴我们成长
 
+::: tip 提醒
+中考考点！重点背诵！
+:::
+
 1. 未成年人需要特殊保护的原因
 
     1. 未成年人<u>身心发育尚不成熟</u>，<u>自我保护能力较弱</u>，<u>辨别是非能力</u>和<u>自我控制能力</u>不强，容易受到不良因素的影响和不法侵害。
@@ -430,7 +519,7 @@ main {
 
 <div class="divider"></div>
 
-# Copyrights
+# 版权声明
 
 作者: [7086cmd](https://github.com/7086cmd).<br>
 
@@ -438,4 +527,23 @@ main {
 本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**
+<script setup>
+import { ref } from "vue";
+
+const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
+.split("|")[0]
+.trim());
+
+const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+
+</script>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div id="ending">初中政史地提纲整理</div>
+</div>
+
+<div class="right">
+  <p>未经作者许可禁售。</p>
+</div>

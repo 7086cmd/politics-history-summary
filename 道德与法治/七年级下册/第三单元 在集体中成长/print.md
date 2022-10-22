@@ -1,23 +1,80 @@
 
+  <style>
+  #title {
+    padding-top: 40%;
+    font-size: 96px;
+    padding-bottom: 24%;
+  }
+
+  #ending {
+    padding-top: 60%;
+    font-size: 48px;
+    padding-bottom: 12%;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+  #inform {
+    padding-right: 8%;
+    font-size: 18px;
+  }
+
+  .topic {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    font-size: 48px;
+  }
+</style>
+<div class="center">
+  <div id="title">{{ printTitle }}</div>
+</div>
+<div class="right">
+  <p id="inform">姓名：________________</p>
+  <p id="inform">学号：________________</p>
+  <p id="inform">班级：________________</p>
+  <p id="inform">学校：________________</p>
+
+  <hr />
+  <div>
+    {{ printDate }}<br />
+    制作：<a href="https://github.com/7086cmd/">7086cmd</a><br />
+    仓库地址：<a href="https://github.com/7086cmd/politics-history-summary"
+      >https://github.com/7086cmd/politics-history-summary</a
+    >
+  </div>
+</div>
+
+
+<div class="divider_top"></div>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div class="topic">目录</div>
+</div>
+
     - [第三单元 在集体中成长](#第三单元-在集体中成长)<br>
       - [第六课 “我”和“我们”](#第六课-“我”和“我们”)<br>
       - [第七课 共奏和谐乐章](#第七课-共奏和谐乐章)<br>
       - [第八课 美好集体有我在](#第八课-美好集体有我在)<br>
-- [Copyrights](#copyrights)<br>
 
 <div class="divider"></div>
 
 
-<style>
-main {
-  /* font-family: "仿宋" !important */
-}
-</style>
 ### 第三单元 在集体中成长
 
 ---
 
 #### 第六课 “我”和“我们”
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 集体是人们联合起来的<u>有组织</u>的整体。集体并不是成员的简单相加，而是有<u>共同目标</u>、<u>分工明确</u>的整体。
 
@@ -41,6 +98,10 @@ main {
 ---
 
 #### 第七课 共奏和谐乐章
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 个人意愿与集体规则的关系
 
@@ -92,7 +153,7 @@ main {
 
 <div class="divider"></div>
 
-# Copyrights
+# 版权声明
 
 作者: [7086cmd](https://github.com/7086cmd).<br>
 
@@ -100,4 +161,23 @@ main {
 本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**
+<script setup>
+import { ref } from "vue";
+
+const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
+.split("|")[0]
+.trim());
+
+const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+
+</script>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div id="ending">初中政史地提纲整理</div>
+</div>
+
+<div class="right">
+  <p>未经作者许可禁售。</p>
+</div>

@@ -2,12 +2,6 @@
 
 ---
 
-::: warning 重要提醒
-PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问题，是中考中的必考题目，一般以 **分析向大题出现，占据 8 分左右** 。
-:::
-
----
-
 #### 第一框 世界面临的资源问题
 
 ---

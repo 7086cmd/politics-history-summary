@@ -1,23 +1,80 @@
 
+  <style>
+  #title {
+    padding-top: 40%;
+    font-size: 96px;
+    padding-bottom: 24%;
+  }
+
+  #ending {
+    padding-top: 60%;
+    font-size: 48px;
+    padding-bottom: 12%;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+  #inform {
+    padding-right: 8%;
+    font-size: 18px;
+  }
+
+  .topic {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    font-size: 48px;
+  }
+</style>
+<div class="center">
+  <div id="title">{{ printTitle }}</div>
+</div>
+<div class="right">
+  <p id="inform">姓名：________________</p>
+  <p id="inform">学号：________________</p>
+  <p id="inform">班级：________________</p>
+  <p id="inform">学校：________________</p>
+
+  <hr />
+  <div>
+    {{ printDate }}<br />
+    制作：<a href="https://github.com/7086cmd/">7086cmd</a><br />
+    仓库地址：<a href="https://github.com/7086cmd/politics-history-summary"
+      >https://github.com/7086cmd/politics-history-summary</a
+    >
+  </div>
+</div>
+
+
+<div class="divider_top"></div>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div class="topic">目录</div>
+</div>
+
     - [第二单元 遵守社会规则](#第二单元-遵守社会规则)<br>
       - [第三课 社会生活离不开规则](#第三课-社会生活离不开规则)<br>
       - [第四课 社会生活讲道德](#第四课-社会生活讲道德)<br>
       - [第五课 做守法的公民](#第五课-做守法的公民)<br>
-- [Copyrights](#copyrights)<br>
 
 <div class="divider"></div>
 
 
-<style>
-main {
-  /* font-family: "仿宋" !important */
-}
-</style>
 ### 第二单元 遵守社会规则
 
 ---
 
 #### 第三课 社会生活离不开规则
+
+::: tip 提醒
+中考考点！重点背诵！
+:::
 
 1. 社会秩序包括<u>社会管理秩序</u>、<u>生产秩序</u>、<u>交通秩序</u>、<u>公共场所秩序</u>等。
    社会规则包括<u>道德</u>、<u>纪律</u>、<u>法律</u>等。
@@ -66,6 +123,10 @@ main {
 
 #### 第四课 社会生活讲道德
 
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
+
 1. 尊重即<u>尊敬</u>、<u>重视</u>。
 2. 为什么要尊重他人
     1. 尊重是交往的<u>起点</u>，尊重他人是一个人<u>内在修养</u>的<u>外在表现</u>。
@@ -99,6 +160,10 @@ main {
 ---
 
 #### 第五课 做守法的公民
+
+::: tip 提醒
+中考考点！重点背诵！
+:::
 
 1. 法律是<u>最刚性</u>的社会规则，<u>不违法</u>是人们行为的底线。
 
@@ -166,7 +231,7 @@ main {
 
 <div class="divider"></div>
 
-# Copyrights
+# 版权声明
 
 作者: [7086cmd](https://github.com/7086cmd).<br>
 
@@ -174,4 +239,23 @@ main {
 本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**
+<script setup>
+import { ref } from "vue";
+
+const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
+.split("|")[0]
+.trim());
+
+const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+
+</script>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div id="ending">初中政史地提纲整理</div>
+</div>
+
+<div class="right">
+  <p>未经作者许可禁售。</p>
+</div>

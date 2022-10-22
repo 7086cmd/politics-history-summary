@@ -49,6 +49,11 @@ body {
     page-break-before: always !important;
   }
 
+  .divider_top {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
   .saparation {
     break-before: page !important;
     page-break-before: always !important;
@@ -61,5 +66,6 @@ body {
   body {
     /* font-family: "仿宋" !important; */
     zoom: 80%;
+    color: #000000
   }
 }

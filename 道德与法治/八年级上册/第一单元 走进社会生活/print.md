@@ -1,22 +1,79 @@
 
+  <style>
+  #title {
+    padding-top: 40%;
+    font-size: 96px;
+    padding-bottom: 24%;
+  }
+
+  #ending {
+    padding-top: 60%;
+    font-size: 48px;
+    padding-bottom: 12%;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+
+  #inform {
+    padding-right: 8%;
+    font-size: 18px;
+  }
+
+  .topic {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    font-size: 48px;
+  }
+</style>
+<div class="center">
+  <div id="title">{{ printTitle }}</div>
+</div>
+<div class="right">
+  <p id="inform">姓名：________________</p>
+  <p id="inform">学号：________________</p>
+  <p id="inform">班级：________________</p>
+  <p id="inform">学校：________________</p>
+
+  <hr />
+  <div>
+    {{ printDate }}<br />
+    制作：<a href="https://github.com/7086cmd/">7086cmd</a><br />
+    仓库地址：<a href="https://github.com/7086cmd/politics-history-summary"
+      >https://github.com/7086cmd/politics-history-summary</a
+    >
+  </div>
+</div>
+
+
+<div class="divider_top"></div>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div class="topic">目录</div>
+</div>
+
     - [第一单元 走进社会生活](#第一单元-走进社会生活)<br>
       - [第一课 丰富的社会生活](#第一课-丰富的社会生活)<br>
       - [第二课 网络生活新空间](#第二课-网络生活新空间)<br>
-- [Copyrights](#copyrights)<br>
 
 <div class="divider"></div>
 
 
-<style>
-main {
-  /* font-family: "仿宋" !important */
-}
-</style>
 ### 第一单元 走进社会生活
 
 ---
 
 #### 第一课 丰富的社会生活
+
+::: danger 提醒
+非中考考点！无事勿花太多时间在上面！
+:::
 
 1. 参与社会活动的意义
    人们在社会交往中形成了各种社会关系。随着身体的成长、智力的发展、能力的提高，我们的社会生活空间不断延展，我们会与越来越多的人打交道，对社会生活的感受越来越丰富，认识越来越深刻。我们会更加关注社区治理，并献计献策；会更加关心国家发展，或为之自豪，或准备为之分忧。
@@ -40,6 +97,10 @@ main {
 ---
 
 #### 第二课 网络生活新空间
+
+::: tip 提醒
+中考考点！重点背诵！
+:::
 
 1. 网络丰富日常生活的表现
     1. <u>网络让我们日常生活中的信息传递和交流变得方便快捷；</u>
@@ -65,7 +126,10 @@ main {
         1. <u>网络让我们日常生活中的信息传递和交流变得方便快捷；</u>
         2. <u>网络打破了传统人际交往的时空限制，促进了人际交往；</u>
         3. <u>网络让我们的生活变得更加便利和丰富多彩</u>
-    2. <u>网络推动社会进步</u> 4. <u>网络为经济发展注入新的活力。</u> 5. <u>网络促进民主政治的进步。</u> 6. <u>网络为文化传播和科技创新搭建新平台。</u>
+    2. <u>网络推动社会进步</u>
+        1. <u>网络为经济发展注入新的活力。</u>
+        2. <u>网络促进民主政治的进步。</u>
+        3. <u>网络为文化传播和科技创新搭建新平台。</u>
 
 4. 网络的消极作用
     1. <u>在网络时代，出现了一些虚假的、不良的信息；</u>
@@ -96,7 +160,7 @@ main {
 
 <div class="divider"></div>
 
-# Copyrights
+# 版权声明
 
 作者: [7086cmd](https://github.com/7086cmd).<br>
 
@@ -104,4 +168,23 @@ main {
 本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
 </p>
 
-**等到2023年6月以后，资源将会全部开放，届时许可证也会从 `CC BY-NC-ND 4.0` 协议改到 `MIT` 协议**
+<script setup>
+import { ref } from "vue";
+
+const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
+.split("|")[0]
+.trim());
+
+const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+
+</script>
+
+<div class="divider_top"></div>
+
+<div class="center">
+  <div id="ending">初中政史地提纲整理</div>
+</div>
+
+<div class="right">
+  <p>未经作者许可禁售。</p>
+</div>
