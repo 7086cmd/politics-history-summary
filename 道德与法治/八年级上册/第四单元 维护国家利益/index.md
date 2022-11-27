@@ -74,3 +74,5 @@
 #### 第十课 建设美好祖国
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-4-7.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

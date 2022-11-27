@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -63,7 +72,7 @@
       - [第 2 课 古代两河流域](#第-2-课-古代两河流域)<br>
       - [第 3 课 古代印度](#第-3-课-古代印度)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第一单元 古代亚非文明
@@ -89,7 +98,7 @@
 
 5. 古代印度早期文明遗址：<u>哈拉帕</u>和<u>摩亨佐·达罗</u>，<u>孔雀王朝</u>统治时期是古印度文明的鼎盛时期。
 
-6. <u>种姓制度</u>是印度严格的社会等级制度，<u>婆罗门</u>、<u>刹帝利</u>、<u>吠舍</u>、<u>普陀罗</u>是由高到低的四个等级，除此之外，还有最卑贱的“不可接触者”——<u>贱民</u>。
+6. <u>种姓制度</u>是印度严格的社会等级制度，<u>婆罗门</u>、<u>刹帝利</u>、<u>吠舍</u>、<u>首陀罗</u>是由高到低的四个等级，除此之外，还有最卑贱的“不可接触者”——<u>贱民</u>。
 
 7. 古代印度的宗教成就：<u>佛教</u>，创立者：<u>释迦牟尼</u>。
 
@@ -121,9 +130,9 @@
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -132,7 +141,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

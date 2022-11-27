@@ -158,3 +158,9 @@
     1. 当国家利益、公共利益、本人或他人的权益受到不法侵害时，我们要<u>勇敢于并善于依法维护正当权益</u>；
 
     2. 在面对违法犯罪时，我们要<u>善于斗争</u>，在<u>保全自己</u>、<u>减少伤害</u>前提下，巧妙地借助他人或社会的力量，采取<u>机智灵活的方式</u>，同违法犯罪作斗争。
+
+---
+
+<iframe src="/assets/summaries-blank/ml-8-1-2-3.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-5.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

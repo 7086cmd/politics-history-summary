@@ -6,7 +6,11 @@ import { getTopics } from "./toc.js";
 
 const __dirname = resolve();
 
-export function createFile(filter = "/") {
+const args_filter = process.argv[2];
+
+console.log(args_filter);
+
+export function createFile(filter = args_filter ?? "/") {
   const filelist = createFileList(filter).result;
 
   let content = `
@@ -14,7 +18,11 @@ export function createFile(filter = "/") {
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -35,6 +43,10 @@ export function createFile(filter = "/") {
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -43,8 +55,9 @@ export function createFile(filter = "/") {
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -71,7 +84,7 @@ export function createFile(filter = "/") {
 
 [[TOC]]
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 `;
 
@@ -108,9 +121,9 @@ ${filec}
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(\`导出日期：\${new Date().toLocaleDateString()} \${new Date().toLocaleTimeString()}\`);
 
@@ -119,7 +132,7 @@ const printDate = ref(\`导出日期：\${new Date().toLocaleDateString()} \${ne
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

@@ -23,3 +23,5 @@
     基本国策：<u>计划生育</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

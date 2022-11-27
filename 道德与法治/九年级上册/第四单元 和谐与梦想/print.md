@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -62,7 +71,7 @@
       - [第七课 中华一家亲](#第七课-中华一家亲)<br>
       - [第八课 中国人 中国梦](#第八课-中国人-中国梦)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第四单元 和谐与梦想
@@ -147,7 +156,7 @@
 
 #### 第八课 中国人 中国梦
 
-1. 近代以来中华民族最伟大的梦想（中国梦）是<u>实现中华民族伟大复兴</u>；<br>
+1. 近代以来中华民族最伟大的梦想（中国梦）：<u>实现中华民族伟大复兴</u>；<br>
    中国梦的内涵：<u>实现国家富强、民族振兴、人民幸福</u>。
 
 2. 中国共产党的指导思想：
@@ -177,8 +186,7 @@
     4. 医疗、养老等民生措施：<u>共享</u>；
     5. 与科技相关的问题：<u>创新</u>；
 
-6. 中国自信、民族自信的根本所在（中国特色社会主义事业取得一切成就的根本原因）：
-   <u>中国共产党领导中国人民开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系，确立了中国特色社会主义制度，发展了中国特色社会主义文化</u>。
+6. 中国自信、民族自信的根本所在（中国特色社会主义事业取得一切成就的根本原因）：<u>中国共产党领导中国人民开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系，确立了中国特色社会主义制度，发展了中国特色社会主义文化</u>。
 
 7. 办好中国的事情，关键在<u>党</u>。
 
@@ -221,9 +229,9 @@
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -232,7 +240,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

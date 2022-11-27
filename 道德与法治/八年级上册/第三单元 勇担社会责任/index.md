@@ -33,3 +33,5 @@
 #### 第七课 积极奉献社会
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-3-5.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

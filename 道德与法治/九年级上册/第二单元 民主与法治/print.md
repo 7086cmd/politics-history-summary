@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -62,7 +71,7 @@
       - [第三课 追求民主价值](#第三课-追求民主价值)<br>
       - [第四课 建设法治中国](#第四课-建设法治中国)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第二单元 民主与法治
@@ -149,7 +158,7 @@
    地位：<u>是中国特色社会主义的本质要求和重要保障</u>；<br>
    全面依法治国的根本遵循和行动指南：<u>习近平法治思想</u>；<br>
    全面依法治国的总目标：<u>建设中国特色社会主义法治体系，建设社会主义法治国家</u>；<br>
-   （全面）依法治国的基本方针：<u>科学立法、严格执法、公正司法、全民守法</u>
+   （全面）依法治国的基本方针：<u>科学立法、严格执法、公正司法、全民守法</u>。
 4. 区分几个本质性的观点
     1. 中国特色社会主义最本质的特征：<u>中国共产党领导</u>；
     2. 中国特色社会主义本质要求：<u>全面依法治国</u>；
@@ -215,9 +224,9 @@
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -226,7 +235,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

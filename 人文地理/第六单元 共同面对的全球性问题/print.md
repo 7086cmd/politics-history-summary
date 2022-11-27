@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -74,7 +83,7 @@
       - [第三框 向贫困宣战](#第三框-向贫困宣战)<br>
     - [综合探究六 区域的变化](#综合探究六-区域的变化)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ## 第六单元 共同面对的全球性问题
@@ -129,6 +138,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 ---
 
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第二课 日益严峻的资源问题
@@ -162,6 +173,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 ---
 
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第三课 共同关注的环境问题
@@ -191,6 +204,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
         3. <u>有利于建设美丽中国，实现中华民族的永续发展。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -238,6 +253,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 ---
 
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 综合探究六 区域的变化
@@ -267,9 +284,9 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -278,7 +295,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

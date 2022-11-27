@@ -28,3 +28,5 @@
     3. <u>做到节水、节电，低碳出行，减少一次性物品的使用等。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

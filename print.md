@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -131,6 +140,11 @@
     - [第四单元 和谐与梦想](#第四单元-和谐与梦想)<br>
       - [第七课 中华一家亲](#第七课-中华一家亲)<br>
       - [第八课 中国人 中国梦](#第八课-中国人-中国梦)<br>
+    - [九年级上册默写与整理提纲](#九年级上册默写与整理提纲)<br>
+      - [九上 1-3 课默写](#九上-1-3-课默写)<br>
+      - [PRED 问题](#pred-问题)<br>
+      - [九上一二单元默写](#九上一二单元默写)<br>
+      - [九上三四单元默写](#九上三四单元默写)<br>
   - [九年级下册](#九年级下册)<br>
     - [第一单元 我们共同的世界](#第一单元-我们共同的世界)<br>
       - [第一课 同住地球村](#第一课-同住地球村)<br>
@@ -265,13 +279,33 @@
       - [第 5 课 罗马城邦和罗马帝国](#第-5-课-罗马城邦和罗马帝国)<br>
       - [第 6 课 希腊罗马古典文化](#第-6-课-希腊罗马古典文化)<br>
     - [第三单元 封建时代的欧洲](#第三单元-封建时代的欧洲)<br>
+      - [第 7 课 基督教的兴起和法兰克王国](#第-7-课-基督教的兴起和法兰克王国)<br>
+      - [第 8 课 西欧庄园](#第-8-课-西欧庄园)<br>
+      - [第 9 课 中世纪城市和大学的兴起](#第-9-课-中世纪城市和大学的兴起)<br>
+      - [第 10 课 拜占庭帝国与《查士丁尼法典》](#第-10-课-拜占庭帝国与《查士丁尼法典》)<br>
     - [第四单元 封建时代的亚洲国家](#第四单元-封建时代的亚洲国家)<br>
+      - [第 13 课 古代日本](#第-13-课-古代日本)<br>
+      - [第 14 课 阿拉伯帝国](#第-14-课-阿拉伯帝国)<br>
     - [第五单元 走向近代](#第五单元-走向近代)<br>
+      - [第 13 课 西欧经济和社会的发展](#第-13-课-西欧经济和社会的发展)<br>
+      - [第 14 课 文艺复兴运动](#第-14-课-文艺复兴运动)<br>
+      - [第 15 课 探寻新航路](#第-15-课-探寻新航路)<br>
+      - [第 16 课 早期殖民掠夺](#第-16-课-早期殖民掠夺)<br>
     - [第六单元 资本主义制度的初步确立](#第六单元-资本主义制度的初步确立)<br>
+      - [第 17 课 君主立宪制的英国](#第-17-课-君主立宪制的英国)<br>
+      - [第 18 课 美国的独立](#第-18-课-美国的独立)<br>
+      - [第 19 课 法国大革命和拿破仑帝国](#第-19-课-法国大革命和拿破仑帝国)<br>
     - [第七单元 工业革命和共产主义运动的兴起](#第七单元-工业革命和共产主义运动的兴起)<br>
+      - [第 20 课 第一次工业革命](#第-20-课-第一次工业革命)<br>
+      - [第 21 课 马克思主义的诞生和国际共产主义运动的兴起](#第-21-课-马克思主义的诞生和国际共产主义运动的兴起)<br>
   - [九年级上册](#九年级上册)<br>
     - [第一单元 殖民地人民的反抗与资本主义制度的扩展](#第一单元-殖民地人民的反抗与资本主义制度的扩展)<br>
+      - [第 1 课 殖民地人民的反抗斗争](#第-1-课-殖民地人民的反抗斗争)<br>
+      - [第 2 课 俄国的改革](#第-2-课-俄国的改革)<br>
+      - [第 3 课 美国内战](#第-3-课-美国内战)<br>
+      - [第 4 课 日本明治维新](#第-4-课-日本明治维新)<br>
     - [第二单元 第二次工业革命和近代科学文化](#第二单元-第二次工业革命和近代科学文化)<br>
+      - [第 5 课 第二次工业革命](#第-5-课-第二次工业革命)<br>
     - [第三单元 第一次世界大战和战后初期的世界](#第三单元-第一次世界大战和战后初期的世界)<br>
     - [第四单元 经济大危机和第二次世界大战](#第四单元-经济大危机和第二次世界大战)<br>
     - [第五单元 二战后的世界变化](#第五单元-二战后的世界变化)<br>
@@ -378,8 +412,34 @@
 - [人文地理第四单元默写提纲](#人文地理第四单元默写提纲)<br>
 - [八上中国历史终极默写](#八上中国历史终极默写)<br>
 - [八下历史与社会复习提纲](#八下历史与社会复习提纲)<br>
+  - [九年级全一册](#九年级全一册)<br>
+    - [Unit 1 How can we become good learners?](#unit-1-how-can-we-become-good-learners?)<br>
+      - [全效学习错题](#全效学习错题)<br>
+      - [Test for Unit 1 错题](#test-for-unit-1-错题)<br>
+      - [全效·基础循环练错题](#全效·基础循环练错题)<br>
+      - [周周清错题](#周周清错题)<br>
+    - [Unit 2 I think that mooncakes are delicious!](#unit-2-i-think-that-mooncakes-are-delicious!)<br>
+      - [全效学习错题](#全效学习错题)<br>
+      - [Test for Unit 2 错题](#test-for-unit-2-错题)<br>
+      - [全效·基础循环练错题](#全效·基础循环练错题)<br>
+      - [周周清错题](#周周清错题)<br>
+    - [Unit 3 Could you please tell me where are the restrooms are?](#unit-3-could-you-please-tell-me-where-are-the-restrooms-are?)<br>
+      - [全效学习错题](#全效学习错题)<br>
+      - [Test for Unit 3 错题](#test-for-unit-3-错题)<br>
+      - [全效·基础循环练错题](#全效·基础循环练错题)<br>
+      - [周周清错题](#周周清错题)<br>
+    - [Unit 4 I used to be afraid of the dark.](#unit-4-i-used-to-be-afraid-of-the-dark.)<br>
+      - [全效学习错题](#全效学习错题)<br>
+      - [Test for Unit 4 错题](#test-for-unit-4-错题)<br>
+      - [全效·基础循环练错题](#全效·基础循环练错题)<br>
+      - [周周清错题](#周周清错题)<br>
+    - [Unit 5 What are the shirts made of?](#unit-5-what-are-the-shirts-made-of?)<br>
+      - [全效学习错题](#全效学习错题)<br>
+      - [Test for Unit 5 错题](#test-for-unit-5-错题)<br>
+      - [全效·基础循环练错题](#全效·基础循环练错题)<br>
+      - [周周清错题](#周周清错题)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 # 道德与法治
@@ -1364,6 +1424,8 @@
 
 ---
 
+<iframe src="/assets/summaries-blank/ml-7-2-4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ## 八年级上册
@@ -1467,6 +1529,9 @@
     2. <u>我们要在网上传播正能量</u>。
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-1-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-1-2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -1631,6 +1696,12 @@
 
     2. 在面对违法犯罪时，我们要<u>善于斗争</u>，在<u>保全自己</u>、<u>减少伤害</u>前提下，巧妙地借助他人或社会的力量，采取<u>机智灵活的方式</u>，同违法犯罪作斗争。
 
+---
+
+<iframe src="/assets/summaries-blank/ml-8-1-2-3.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-5.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第三单元 勇担社会责任
@@ -1668,6 +1739,8 @@
 #### 第七课 积极奉献社会
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-3-5.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -1747,6 +1820,8 @@
 #### 第十课 建设美好祖国
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-4-7.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -2283,7 +2358,7 @@
 
 ## 九年级上册
 
-围绕着 **五位一体建设** 富强民主文明和谐美丽 5 个关键词，讲经济建设、政治建设、文化建设、社会建设和生态环境建设。具体见下表
+围绕着 **五位一体建设** 富强民主文明和谐美丽 5 个关键词，讲经济建设、政治建设、文化建设、社会建设和生态文明建设。具体见下表
 
 | 建设名称 | 文明建设名称 | 课时或单元                                                                                 | 建设目标 |
 | :------- | :----------- | :----------------------------------------------------------------------------------------- | :------- |
@@ -2540,7 +2615,7 @@
    地位：<u>是中国特色社会主义的本质要求和重要保障</u>；<br>
    全面依法治国的根本遵循和行动指南：<u>习近平法治思想</u>；<br>
    全面依法治国的总目标：<u>建设中国特色社会主义法治体系，建设社会主义法治国家</u>；<br>
-   （全面）依法治国的基本方针：<u>科学立法、严格执法、公正司法、全民守法</u>
+   （全面）依法治国的基本方针：<u>科学立法、严格执法、公正司法、全民守法</u>。
 4. 区分几个本质性的观点
     1. 中国特色社会主义最本质的特征：<u>中国共产党领导</u>；
     2. 中国特色社会主义本质要求：<u>全面依法治国</u>；
@@ -2628,7 +2703,7 @@
     2. <u>有利于实现中华民族伟大复兴；</u>
     3. <u>坚定文化自信，事关国运兴衰、文化安全和民族精神的传承和发展。</u>
 
-11. 如何坚定文化自信
+11. 如何坚定文化自信（如何发展中国特色社会主义文化）
 
     1. <u>坚持以马克思主义为指导；</u>
     2. <u>推动中华优秀传统文化创造性转化、创造性发展，继承革命文化，发展社会主义先进文化；</u>
@@ -2759,7 +2834,7 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
 
 #### 第八课 中国人 中国梦
 
-1. 近代以来中华民族最伟大的梦想（中国梦）是<u>实现中华民族伟大复兴</u>；<br>
+1. 近代以来中华民族最伟大的梦想（中国梦）：<u>实现中华民族伟大复兴</u>；<br>
    中国梦的内涵：<u>实现国家富强、民族振兴、人民幸福</u>。
 
 2. 中国共产党的指导思想：
@@ -2789,8 +2864,7 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
     4. 医疗、养老等民生措施：<u>共享</u>；
     5. 与科技相关的问题：<u>创新</u>；
 
-6. 中国自信、民族自信的根本所在（中国特色社会主义事业取得一切成就的根本原因）：
-   <u>中国共产党领导中国人民开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系，确立了中国特色社会主义制度，发展了中国特色社会主义文化</u>。
+6. 中国自信、民族自信的根本所在（中国特色社会主义事业取得一切成就的根本原因）：<u>中国共产党领导中国人民开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系，确立了中国特色社会主义制度，发展了中国特色社会主义文化</u>。
 
 7. 办好中国的事情，关键在<u>党</u>。
 
@@ -2817,6 +2891,278 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
 <iframe src="/assets/summaries-blank/ml-g91-4-7.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <iframe src="/assets/summaries-blank/ml-g91-4-8.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>
+
+<div class="divider"></div>
+
+### 九年级上册默写与整理提纲
+
+---
+
+- [1-3 课默写](#1-3-课默写)
+- [PRED 问题](#pred-问题)
+- [一二单元默写](#一二单元默写)
+- [三四单元默写](#三四单元默写)
+
+---
+
+#### 九上 1-3 课默写
+
+1. 注意区别以下几个时间点（时间、事件）：
+
+   1. 开辟中国历史新纪元：<u>1949 年，新中国成立</u>
+   2. 进入社会主义社会：<u>1956 年，三大改造的基本完成</u>
+   3. 进入中国特色社会主义新时期：<u>1978 年，中共十一届三中全会</u>
+   4. 进入中国特色社会主义新时代：<u>2012 年，党的十八大</u>
+
+2. 改革开放的重要性
+
+   1. <u>坚持改革开放，是我们的强国之路。</u>
+   2. <u>改革开放是决定当代中国命运的关键一招<i>（关键抉择）</i>，也是决定实现中华民族伟大复兴的关键一招。</u>
+   3. （意义）<u>改革开放极大解放和发展社会生产力，人民生活显著改善，综合国力显著增强，国际地位显著提高。</u>
+
+3. 创新的重要性：
+
+   1. <u>科技创新能力已经成为综合国力竞争的决定性因素。（<i>创新已经成为世界主要国家发展战略的重心。</i>）</u>
+   2. <u>创新是引领发展的第一动力，创新是一个民族进步的灵魂，是一个国家兴旺发达的不竭源泉。</u>
+
+4. 国家的中心工作：<u>经济建设</u>；<br>
+   国家发展全局的核心：<u>创新</u>；<br>
+   全面创新的核心：<u>科技创新</u>；<br>
+   经济建设的重心：<u>依靠科技进步和提高劳动者素质</u>；<br>
+   民族振兴、社会进步的基石：<u>教育</u>；<br>
+   企业持续发展之基、市场制胜之道：<u>提升创新能力</u>；<br>
+   党的奋斗目标：<u>人民对美好生活的向往</u>；<br>
+   党和政府坚持的发展思想：<u>以人民为中心</u>；<br>
+   社会主义初级阶段的奋斗目标：<u>将中国建设成为建成富强民主文明和谐美丽的社会主义现代化强国</u>；<br>
+   我国社会主要矛盾：<u>人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾</u>；<br>
+   发展的目的：<u>增进民生福祉</u>；<br>
+   创新的目的：<u>增进人民福祉，让生活更美好</u>。<br>
+
+5. 怎样建设创新型国家（国家角度）
+
+   1. <u>落实科教兴国、人才强国战略，把经济建设重心转移到依靠科技进步和提高劳动者素质的轨道上来</u>
+   2. <u>大力发展教育事业，培养创新型人才</u>
+   3. <u>实施创新驱动发展战略，推进以科技创新为核心的全面创新，增强自主创新能力</u>
+   4. <u>营造有利于创新的舆论氛围和法治环境。</u>
+
+6. 社会主义民主的本质特征：<u>人民当家作主</u>；<br>
+   目的：<u>保障最广大人民的利益</u>；<br>
+   我国社会主义民主的特点：<u>是新型的民主，是维护人民根本利益的最广泛、最真实、最管用的民主</u>。
+
+7. 我国社会主义民主的重要形式：<u>选举民主、协商民主</u>；<br>
+   我国公民行使民主权利的形式：<u>民主选举、民主决策、民主监督</u>。
+
+8. 人民民主的真谛：<u>有事好商量，众人的事情由众人商量</u>；<br>
+   我国社会主义民主政治的特有形式和独特优势：<u>协商民主</u>。
+
+9. 我国公民参与民主决策的制度：<u>社情民意反映制度</u>、<u>专家咨询制度</u>、<u>重大事项社会公示制度</u>和<u>社会听证制度</u>等是公民参与民主决策的有力保证。
+
+10.   网络问政的作用
+      1. <u>有利于推进决策的民主化和科学化；</u>
+      2. <u>有利于拓宽民主渠道，保障公民的监督权；</u>
+      3. <u>有利于促进政府依法行政。</u>
+
+11.   政府召开听证会（或网络问政）说明了什么
+      1. <u>我国是人民当家作主的国家（人民是国家的主人）；</u>
+      2. <u>政府坚持以人民为中心的发展思想；</u>
+      3. <u>政府坚持依法行政，保障公民的参与权和监督权。</u>
+
+---
+
+#### PRED 问题
+
+1. 我国人口国情
+
+    1. <u>人口老龄化程度不断加深；</u>
+    2. <u>人口素质大幅提高，但与世界发达国家相比还有上升空间；</u>
+    3. <u>人口总量大，但增长势头明显减弱。</u>
+
+2. 解决我国人口问题的基本国策：<u>计划生育</u>。
+
+3. 我国的资源国情
+
+    1. <u>我国资源总量丰富，人均占有量少；</u>
+    2. <u>空间分布不均匀；</u>
+    3. <u>利用率低，破坏与浪费严重。</u>
+
+4. 我国主要的生态环境问题：<u>荒漠化、水土流失</u>；<br>
+   我国主要的环境污染问题：<u>废气、废水、固体废弃物污染</u>。
+
+5. 一个文明建设：<u>生态文明建设</u>；<br>
+   两个社会：<u>资源节约型社会、环境友好型社会</u>；<br>
+   两个发展观：<u>科学发展观、可持续发展观</u>；<br>
+   两个发展战略：<u>可持续发展战略、科教兴国战略</u>；<br>
+   两条道路：<u>生产发展、生活富裕、生活良好</u>的文明发展道路、<u>绿色发展</u>道路；<br>
+   五大新发展理念：<u>创新、协调、绿色、开放、共享</u>；<br>
+   三大基本国策：<u>（人口）计划生育、（资源）节约资源、（环境）保护环境</u>。<br>
+
+6. 中国如何实现可持续发展（绿色发展、美丽中国……）的措施
+
+    1. <u>政府积极贯彻可持续发展思想，依据中国国情，坚持创新、协调、绿色、开放、共享的新发展理念；</u>
+    2. <u>树立“绿水青山就是金山银山”的意识；</u>
+    3. <u>坚定可持续发展，坚定走生产发展、生活富裕、生态良好的文明发展道路；</u>
+    4. <u>建设资源节约型、环境友好型社会，形成人与自然和谐发展的现代化建设新格局；</u>
+    5. <u>坚持节约资源和环境保护的基本国策。</u>
+
+7. 走可持续发展道路（低碳生活、美丽中国），青少年该怎么做？
+    1. <u>积极宣传节约资源、保护环境的基本国策；</u>
+    2. <u>采取低碳环保的生活方式，如一水多用、植树种草、不乱扔垃圾、公交出行等。</u>
+    3. <u>依法同浪费资源、破坏环境的行为做斗争。</u>
+
+---
+
+#### 九上一二单元默写
+
+1. 民族振兴、社会进步的基石：<u>教育</u>；<br>
+   安邦定国的重要基石：<u>国家安全</u>；<br>
+   发展的根本目的：<u>增进民生福祉</u>；<br>
+   党和国家的发展思想：<u>以人民为中心</u>；<br>
+   中国共产党的初心和使命：<u>为中国人民谋幸福、为中华民族谋复兴</u>；<br>
+   衡量一个社会的文明程度，不仅要看<u>经济发展</u>，而且要看<u>发展成果是否惠及全体人民</u>。
+
+2. 为什么要全面深化改革？
+
+    1. 主要矛盾角度：<u>我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾；</u>
+    2. 经济发展新常态角度：<u>由高速增长阶段转向高质量发展阶段；</u>
+    3. 现实挑战角度：<u>区域发展不平衡、城镇化水平不高、城乡发展不平衡不协调等现实挑战；</u>
+    4. 改革开放重要性角度：<u>改革开放是我们的强国之路，是决定当代中国命运的关键一招，也是实现中华民族伟大复兴的关键一招。</u>
+
+
+3. 共享发展成果的意义（改善民生措施的意义、乡村振兴战略的意义）
+    1. <u>体现党和政府以人民为中心的发展思想；</u>
+    2. <u>有利于实现共同富裕；</u>
+    3. <u>有利满足人民日益增长的美好生活需要，缓解社会主要矛盾</u>
+    4. <u>有利于促进社会公平正义。</u>
+
+4. 创新的重要性（国家、企业角度）
+    1. 国家角度：
+        1. 科技创新能力已经成为综合国力竞争的决定性因素。（创新已经成为世界主要国家发展战略的重心。）
+        2. 创新是引领发展的第一动力，创新是一个民族进步的灵魂，是一个国家兴旺发达的不竭源泉。
+    2. 企业角度：企业是社会创新的重要力量，提升创新能力是企业持续发展之基、市场制胜之道。
+
+5. 怎样建设创新型国家（国家角度）
+    1. <u>落实科教兴国、人才强国战略，把经济建设重心转移到依靠科技进步和提高劳动者素质的轨道上来</u>
+    2. <u>大力发展教育事业，培养创新型人才</u>
+    3. <u>实施创新驱动发展战略，推进以科技创新为核心的全面创新，增强自主创新能力</u>
+    4. <u>营造有利于创新的舆论氛围和法治环境。</u>
+
+6. 我国社会主义民主的本质特征：<u>人民当家作主</u>；<br>
+   中国特色社会主义的本质要求：<u>全面依法治国</u>；<br>
+   中国特色社会主义最本质的特征：<u>中国共产党领导</u>。
+
+7. 中国特色社会主义法治道路，必须坚持<u>党的领导、人民当家作主、依法治国</u>有机统一。<br>
+   全面依法治国的根本遵循和行动指南：<u>习近平法治思想</u>；<br>
+   （全面）依法治国的基本方针：<u>科学立法、严格执法、公正司法、全民守法</u>。
+
+8. 我国社会主义民主的重要形式：<u>选举民主、协商民主</u>；<br>
+   我国公民行使民主权利的形式：<u>民主选举、民主决策、民主监督</u>；<br>
+   人民民主的真谛：<u>有事好商量，众人的事情由众人商量</u>。
+
+9. 社会听证制度（或其它民主决策制度）的意义：
+
+    1. <u>是公民参与民主决策的有力保证；</u>
+    2. <u>有利于决策方认真听取各方意见，集中民智，促进决策科学化。</u>
+
+10. 法治的要求
+
+    1. 法治要求实行<u>良法之治</u>。其特征是：
+        1. <u>反应最广大人民群众的意志和利益</u>；
+        2. 反映社会发展的规律；
+        3. <u>维护公民的基本权利</u>，<u>符合公平正义要求</u>，促进人与社会的共同发展；
+    2. 法治还要求<u>善治</u>。其要求是：
+        1. <u>建立在民主的基础上</u>；
+        2. <u>通过赋予公民更多的参与公共活动的机会和权利</u>。
+
+11. 建设法治政府的意义有哪些
+
+    1. 政府角度
+        1. <u>有利于我国政府依法行政，全面推进政务公开，促进政府决策科学化和民主化</u>；
+        2. <u>有利于防范行政权力的滥用，提高政府公信力</u>；
+    2. 公民角度
+        1. <u>有利于保障公民的知情权和监督权</u>；
+        2. <u>有利于维护广大人民群众的合法利益</u>。
+
+---
+
+#### 九上三四单元默写
+
+1. 中华文化的特点：<u>源远流长、博大精深、薪火相传、历久弥新</u>；<br>
+   中华文化的精髓：<u>中华传统美德</u>；<br>
+   一个民族进步的灵魂：<u>创新</u>；<br>
+   一个国家、一个民族的灵魂：<u>文化</u>；<br>
+   文化最深层的内核：<u>价值观</u>；<br>
+   当代中国精神的集中体现：<u>社会主义核心价值观</u>。
+
+2. 中华民族精神的内涵：<u>以爱国主义为核心的团结统一、爱好和平、勤劳勇敢、自强不息的伟大民族精神</u>；<br>
+   中国精神的内涵：<u>以爱国主义为核心的民族精神和改革创新为核心的时代精神</u>。<br>
+
+3. 中华文化的重要性（作用）
+
+    1. <u>文化是一个国家、一个民族的灵魂；</u>
+    2. 中华文化积淀着中华民族最深层的精神追求，代表着中华民族独特的精神标识，<u>为中华民族的伟大复兴提供了精神动力；</u>
+    3. <u>增添了中国人民和中华民族内心深处的自信和自豪；</u>
+    4. 中华文化是各民族共同创造的精神家园，是中华民族的根。
+
+4. 如何坚定文化自信（如何发展中国特色社会主义文化）
+
+    1. <u>坚持以马克思主义为指导；</u>
+    2. <u>推动中华优秀传统文化创造性转化、创造性发展，继承革命文化，发展社会主义先进文化；</u>
+    3. <u>不忘本来，吸收外来，面向未来，不断铸就中华文化新辉煌。</u>
+
+5. 弘扬民族精神的原因（重要性）
+
+    1. <u>民族精神始终是中华民族生生不息、发展壮大的强大精神支柱；</u>
+    2. <u>是维系我国各族人民世世代代团结奋斗的牢固精神纽带；</u>
+    3. <u>是激励中华儿女为实现中国梦而奋斗的不竭精神动力。</u>
+
+6. 我国的民族政策：
+    1. 基本政治制度：<u>民族区域自治制度</u>；
+    2. 处理民族关系的方针：<u>民族平等、民族团结、各民族共同繁荣</u>。
+
+   社会主义民族关系的特点：<u>平等团结互助和谐</u>。
+
+7. 中华民族的最高利益：<u>加强和巩固民族团结，维护祖国统一</u>；<br>
+   中华民族的根本利益：<u>解决台湾问题，实现祖国完全统一</u>；<br>
+   解决台湾问题的基本方针：<u>和平统一，一国两制</u>；<br>
+   解决台湾问题的政治基础（前提和基础）：<u>坚持一个中国原则</u>；<br>
+   保持香港、澳门长期繁荣稳定的方针：<u>“一国两制”、“港人治港”、“澳人治澳”、高度自治</u>。
+
+8. 公民如何履行维护民族团结的义务
+
+    1. <u>维护和促进民族团结，是每个公民的神圣职责和光荣义务；</u>
+    2. <u>铸牢中华民族共同体意识；</u>
+    3. <u>尊重各民族的宗教信仰、风俗习惯、语言文字；宣传党的民族政策；与破坏民族团结的行为作斗争。</u>
+
+9. 促进各民族共同繁荣、增进民族团结的意义
+
+    1. <u>有利于民族地区经济发展；</u>
+    2. <u>有利于促进民族关系更加融洽、社会更加和谐稳定；</u>
+    3. <u>有利于推动少数民族文化发展；</u>
+    4. <u>有利于巩固边防、维护国家统一和安全。</u>
+
+10. 近代以来中华民族最伟大的梦想（中国梦）：<u>实现中华民族伟大复兴</u>；<br>
+   中国梦的内涵：<u>实现国家富强、民族振兴、人民幸福</u>。
+
+11. “五位一体”总体布局：<u>经济建设、政治建设、文化建设、社会建设、生态文明建设</u>。
+
+12. 我国发展新的历史方位：<u>中国特色社会主义进入了新时代</u>；<br>
+   党和国家的发展思想是<u>以人民为中心</u>； <br>
+   新发展理念：<u>创新、协调、绿色、开放、共享</u>。
+
+13. 新时代的“两个阶段性目标”
+    1. <u>到 2035 年，基本实现现代化；</u>
+    2. <u>到 21 世纪中叶，把我国建设成为富强民主文明和谐美丽的社会主义现代化强国。</u>
+
+14. 中国自信、民族自信的根本所在（中国特色社会主义事业取得一切成就的根本原因）：<u>中国共产党领导中国人民开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系，确立了中国特色社会主义制度，发展了中国特色社会主义文化</u>。
+
+15. 如何实现中国梦？（国家层面）
+
+    1. <u>必须坚持中国共产党领导，统筹推进“五位一体”总体布局，协调推进“四个全面”战略布局，贯彻五大新发展理念；</u>
+    2. <u>必须走中国道路。中国道路就是中国特色社会主义道路；</u>
+    3. <u>必须弘扬中国精神。中国精神就是以爱国主义为核心的民族精神和改革创新为核心的时代精神。</u>
+    4. <u>必须凝聚中国力量。中国力量就是全国各族人民大团结的力量。</u>
+
+---
 
 <div class="divider"></div>
 
@@ -5355,7 +5701,7 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
 
 5. 古代印度早期文明遗址：<u>哈拉帕</u>和<u>摩亨佐·达罗</u>，<u>孔雀王朝</u>统治时期是古印度文明的鼎盛时期。
 
-6. <u>种姓制度</u>是印度严格的社会等级制度，<u>婆罗门</u>、<u>刹帝利</u>、<u>吠舍</u>、<u>普陀罗</u>是由高到低的四个等级，除此之外，还有最卑贱的“不可接触者”——<u>贱民</u>。
+6. <u>种姓制度</u>是印度严格的社会等级制度，<u>婆罗门</u>、<u>刹帝利</u>、<u>吠舍</u>、<u>首陀罗</u>是由高到低的四个等级，除此之外，还有最卑贱的“不可接触者”——<u>贱民</u>。
 
 7. 古代印度的宗教成就：<u>佛教</u>，创立者：<u>释迦牟尼</u>。
 
@@ -5436,33 +5782,340 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
 
 ### 第三单元 封建时代的欧洲
 
+---
+
+#### 第 7 课 基督教的兴起和法兰克王国
+
+#### 第 8 课 西欧庄园
+
+#### 第 9 课 中世纪城市和大学的兴起
+
+#### 第 10 课 拜占庭帝国与《查士丁尼法典》
+
+1. 1 世纪，在罗马帝国统治下的<u>巴勒斯坦</u>地区，基督教诞生，它的创始人是<u>耶稣</u>，4 世纪末，罗马皇帝将基督教确定为<u>国教</u>，促进了基督教的传播。
+
+2. 476 年，西罗马帝国灭亡后，西欧逐渐进入<u>封建社会</u>，欧洲人称之为“<u>中世纪</u>”。
+
+3. 481 年，克洛维建立<u>法兰克王国</u>。
+
+4. 赐地的人成为<u>封君</u>，接受封地的人成为<u>封臣</u>，两者的关系有着严格的<u>等级性</u>，而且权利、义务交织在一起，有一定的<u>契约</u>意义。11 世纪，这种以<u>土地的封赐为纽带</u>而形成的<u>封建制度</u>在西欧已经普遍存在。
+
+5. 800 年，教皇在罗马为<u>查理</u>举行了加冕礼，他统治时期的法兰克王国，史称“<u>查理曼帝国</u>”。843 年，他的子孙将帝国一分为三，形成以后的<u>德意志</u>、<u>法兰西</u>和<u>意大利</u>三个国家的雏形。
+
+6. 西欧中世纪乡村的典型组织形式是<u>庄园</u>。
+
+7. 西欧封建国家的主要特点：<br>
+   政治：封建等级制度；<br>
+   经济：<br>
+
+    1. <u>庄园经济盛行一时；</u>
+    2. <u>城市兴起。</u>
+
+    文化：
+
+    1. <u>基督教占统治地位，控制人们的思想；</u>
+    2. <u>大学兴起。</u>
+
+8. 城市的基本居民包括<u>手工工匠</u>和<u>商人</u>。随着城市的发展和工商业的繁荣，<u>市民阶层</u>逐渐形成，后出现商人和银行家等，他们成为早期的<u>资产阶级</u>。城市兴起的根本原因是<u>生产力的提高</u>。
+
+9. 城市自治斗争的常用手段<u>金钱赎买</u>和<u>武力斗争</u>。其中最为典型的是法兰西的<u>琅城</u>。
+
+10. 为了避免同行之间的恶性竞争，维护行业的共同利益，同时防止封建领主的侵犯，城市中出现了<u>行会</u>。
+
+11. <u>大学的兴起</u>被认为是欧洲中世纪教育“最美好的花朵”。
+
+12. 罗马三次征服世界：
+
+    1. 以武力征服世界：<u>2 世纪，罗马帝国的版图横跨欧亚非三洲，地中海成了“内湖”。</u>
+    2. 以宗教征服世界：<u>基督教成为世界三大宗教之一。</u>
+    3. 以法律征服世界：
+        1. <u>《十二铜表法》是后世罗马法典乃至欧洲法学的渊源；</u>
+        2. <u>《罗马民法大全》奠定了欧洲民法的基础。</u>
+
+13. 在 527 年，<u>查士丁尼</u>继任为东罗马帝国皇帝，东罗马帝国又称为“<u>拜占庭帝国</u>”，在其执政时期，编制了<u>《查士丁尼法典》</u>、《法学会纂》、《法理概要》、《新法典》，统称为<u>《罗马民法大全》</u>，其局限性表现为<u>仍然承认奴隶制</u>，不过还对财产、买卖、债务、契约关系等作出明确规定，又奠定了<u>欧洲民法的基础</u>。
+
+14. 1453 年，<u>奥斯曼帝国</u>攻破君士坦丁堡，改名为伊斯坦布尔，拜占庭帝国最终灭亡。
+
+---
+
+<iframe src="/assets/summaries-blank/hw-3-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第四单元 封建时代的亚洲国家
+
+---
+
+#### 第 13 课 古代日本
+
+#### 第 14 课 阿拉伯帝国
+
+1. 古代史上，日本在亚洲拜认了第一位老师，并向老师学习，该老师是<u>中国（唐朝）</u>，学习指的是<u>大化改新</u><br>
+   该事件的内容有：
+
+   1. 政治上
+      1. <u>建立以天皇为中心的中央集权制度；</u>
+      2. 地方设国、郡、里三级；
+   2. 经济上
+      1. <u>将土地、部民收归国有；</u>
+      2. <u>国家将土地分给公民；</u>
+      3. 统一赋税。<br>
+
+   该事件的意义是：<u>使日本发展成为一个中央集权制的封建国家，进入封建社会</u>。<br>
+   该事件对我们的启示：
+
+   1. <u>积极改革创新，与时俱进；</u>
+   2. <u>善于借鉴，进一步对外开放。</u>
+
+2. 12世纪晚期，源氏首领源赖朝设幕府于镰仓，日本由此进入近700年的<u>幕府</u>统治时期，这一时期的特点是<u>幕府将军实际上把持着国家大权</u>。
+
+3. 8世纪中期，世界上疆域最大的帝国是：<u>阿拉伯帝国</u><br>
+   地跨<u>欧亚非</u>三大洲，历史上这样的帝国还有<u>亚历山大帝国</u>、<u>罗马帝国</u>、<u>东罗马帝国（拜占庭帝国）</u>。
+
+4. 阿拉伯文化成就：
+   数学：
+
+   1. <u>“阿拉伯数字”；</u>
+   2. <u>代数学；</u>
+
+   医学：《<u>医学集成</u>》和《<u>医典</u>》长期被欧洲医学界奉为经典。
+   文学：《<u>天方夜谭</u>》是阿拉伯文学的瑰宝。
+
+5. 世界三大宗教：
+
+   | 名称            | 创始人                           | 创立时间    | 创立地点                  | 经典       |
+   | --------------- | -------------------------------- | ----------- | ------------------------- | ---------- |
+   | <u>佛教</u>     | <u>乔达摩·悉达多（释迦牟尼）</u> | 公元前6世纪 | <u>古印度</u>             | 佛经       |
+   | <u>基督教</u>   | <u>耶稣</u>                      | 1世纪       | <u>巴勒斯坦地区</u>       | 《圣经》   |
+   | <u>伊斯兰教</u> | <u>穆罕默德</u>                  | 7世纪       | <u>阿拉伯半岛（麦加）</u> | 《古兰经》 |
+
+6. 阿拉伯人对世界文化发展的作用是：<u>担当了沟通东西方文化的角色</u>；<br>
+   请举例说明：<u>中国的造纸术、指南针、火药等重大发明和印度的棉花、食糖等都是由阿拉伯人传入欧洲的。</u>
+
+---
+
+<iframe src="/assets/summaries-blank/hw-4-1_5-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
 ### 第五单元 走向近代
 
+---
+
+#### 第 13 课 西欧经济和社会的发展
+
+1. 14、15世纪西欧出现了新的生产和经营方式：<u>租地农场</u>的建立和<u>手工工场</u>的出现，其中农场主和承租人、雇主与工人形成了<u>雇佣</u>关系，具有资本主义生产关系的特征，意味着资本主义萌芽的出现。
+2. 西欧农村中出现的新社会阶层是<u>富裕农民</u>，城市中出现的新社会阶层是<u>市民阶层</u>。
+
+---
+
+#### 第 14 课 文艺复兴运动
+
+1. 文艺复兴运动兴起的根本原因是<u>工商业发展，出现资本主义萌芽</u>；<br>
+   兴起国家：<u>意大利</u>；<br>
+   核心思潮：<u>人文主义</u>；<br>
+   实质：<u>是一场反对教会“神权之上”和提倡人文主义的新文化运动</u>。
+
+2. 文艺复兴的先驱是<u>但丁</u>，代表作：<u>《神曲》</u>；他与<u>彼特拉克</u>、<u>薄伽丘</u>并称为“文学三杰”。<br>
+   文艺复兴时期美术方面的代表人物：<u>达·芬奇</u>，作品：<u>《蒙娜丽莎》</u>、<u>《最后的晚餐》</u>；他与<u>拉斐尔</u>、<u>米开朗琪罗</u>并称为“美术三杰”。<br>
+   英国文艺复兴的杰出代表是<u>莎士比亚</u>，代表作<u>《哈姆雷特》</u>、<u>《罗密欧与朱丽叶》</u>。
+
+3. 文艺复兴的意义：
+
+   1. <u>促进了人们思想的大解放；</u>
+   2. <u>为欧洲资本主义的产生和发展奠定了思想文化基础。</u>
+
+---
+
+#### 第 15 课 探寻新航路
+
+1. “人的发现”：<u>文艺复兴运动</u>；<br>
+   “地理大发现”（“世界的发现”）：<u>新航路的开辟</u>。
+
+2. 探寻新航路的原因：
+
+   1. 根本原因：<u>商品经济日趋发达，资产阶级渴求开拓新的贸易市场</u>；
+   2. 社会原因：<u>马可·波罗的描绘激起欧洲人对东方的向往</u>；
+   3. 直接原因：<u>奥斯曼帝国控制了东西方贸易的所有重要商道</u>。
+
+3. 探寻新航路的条件：
+
+   1. <u>地圆学说逐渐流行</u>；
+   2. <u>指南针、罗盘技术的应用</u>；
+   3. <u>造船技术的发展</u>；
+   4. <u>西班牙、葡萄牙王室的支持</u>。
+
+4. 探寻新航路辟的经过（按照先后顺序）：
+
+   | 人物 | <u>迪亚士</u>          | <u>哥伦布</u>    | <u>达·伽马</u>   | <u>麦哲伦船队</u> |
+   | ---- | ---------------------- | ---------------- | ---------------- | ----------------- |
+   | 航线 | <u>西欧—非洲好望角</u> | <u>西欧—美洲</u> | <u>西欧—印度</u> | <u>环球航行</u>   |
+
+5. 最早到达印度的航海家：<u>达·伽马</u>；<br>
+   最早发现美洲新大陆的航海家：<u>哥伦布</u>；<br>
+   最早完成环球航行的船队：<u>麦哲伦船队</u>，证明了<u>地圆学说</u>的正确；<br>
+   最早开辟新航路的国家：<u>葡萄牙和西班牙</u>。
+
+6. 探寻新航路的积极影响（意义）
+
+    1. <u>欧洲大西洋沿岸工商业经济繁荣起来，促进了资本主义的发展；</u>
+    2. <u>欧洲与亚洲、非洲、美洲之间建立起了直接的商业联系，往来日益密切；</u>
+    3. <u>世界开始连为一个整体，世界的观念从此逐步确立起来。</u>
+
+---
+
+#### 第 16 课 早期殖民掠夺
+
+1. 为获取更大利益，殖民者从事以贩卖黑奴为中心的呈“三角形”的贸易被称为<u>“三角贸易”</u>；<br>
+   英国凭借强大的实力在世界范围内夺取大片殖民地，自诩为“<u>日不落帝国</u>”。
+
+2. 早期殖民掠夺的影响
+
+    1. <u>客观上有助于欧洲殖民国家的资本原始积累，有助于世界市场逐渐形成；</u>
+    2. <u>给殖民地人民带来了深重的灾难；</u>
+    3. <u>欧洲文化传到殖民地，对殖民地社会的发展产生了深远的影响。</u>
+
+---
+
+<iframe src="/assets/summaries-blank/hw-4-1_5-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
+<iframe src="/assets/summaries-blank/hw-5-2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第六单元 资本主义制度的初步确立
+
+---
+
+#### 第 17 课 君主立宪制的英国
+
+#### 第 18 课 美国的独立
+
+#### 第 19 课 法国大革命和拿破仑帝国
+
+1. 英、美、法资产阶级革命的异同点：
+
+    <table><thead><tr><th colspan="2">项目</th><th>英国资产阶级革命</th><th>美国独立战争</th><th>法国资产阶级革命</th></tr></thead><tbody><tr><th rowspan="6">不同点</th><th>开始标志</th><td><u>1640 年，议会召开</u></td><td><u>1775 年，莱克星顿枪声</u></td><td><u>1789 年，攻占巴士底狱</u></td></tr><tr><th>颁布文件</th><td><u>《权利法案》</u></td><td><u>《独立宣言》</u></td><td><u>《人权宣言》</u></td></tr><tr><th>建立政体</th><td><u>君主立宪制</u></td><td><u>民主共和制</u></td><td><u>民主共和制</u></td></tr><tr><th>根本原因</th><td><u>本国封建专制统治</u></td><td><u>英国殖民统治</u></td><td><u>本国封建专制统治</u></td></tr><tr><th>领导人物</th><td><u>克伦威尔</u></td><td><u>华盛顿</u></td><td><u>罗伯斯庇尔</u></td></tr><tr><th>革命性质</th><td><u>资产阶级革命</u></td><td><u>既是民族解放战胜，也是资产阶级革命</u></td><td><u>资产阶级革命</u></td></tr><tr><th rowspan="3">相同点</th><th>革命原因</th><td colspan="3"><u>资本主义的发展受到了严重阻碍</u></td></tr><tr><th>革命性质（领导阶级）</th><td colspan="3"><u>都由资产阶级领导，都具有资产阶级革命性质</u></td></tr><tr><th>革命结果</th><td colspan="3"><u>建立了资本主义制度，促进了资本主义的发展</u></td></tr></tbody></table>
+
+2. 1688 年资产阶级和新贵族联合发动政变，史称<u>“光荣革命”</u>。
+
+3. 美国、法国资产阶级革命的导火线：<u>1773 年，波士顿倾茶事件</u>；<u>1789 年，三级会议的召开</u>。
+
+4. 美国独立战争的转折点：<u>1777 年，萨拉托加大捷</u>。
+
+5. 英国资产阶级革命处死了国王：<u>查理一世</u>；<br>法国资产阶级革命处死国王：<u>路易十六</u>；
+
+6. 《独立宣言》的意义：<u>是“第一个人权宣言”</u>；<u>标志着美国的诞生</u>；<br>局限：没有宣布废除<u>奴隶制</u>，天赋人权的享有者不包括<u>黑人</u>和<u>印第安人</u>。
+
+7. 世界上第一部资产阶级成文宪法：<u>美国 1787 年宪法</u>。
+
+8. 反对旧制度的思想解放运动：<u>启蒙运动</u>；<br>反对教会“神权至上”和提倡人文主义的新文化运动：<u>文艺复兴运动</u>。
+
+9. 1804 年，法国改为帝国，史称“法兰西第一帝国”，<u>拿破仑</u>加冕称帝，他主持制定了民法典，名为<u>《拿破仑法典》</u>。
+
+10. 英国资产阶级革命的意义：
+
+    1. <u>推翻了封建君主专制，君主立宪制逐渐形成，为英国资本主义发展开辟了道路；</u>
+    2. <u>对世界近代历史的发展产生了深远的影响。</u>
+
+11. 法国大革命的意义：<u>摧毁了法国的君主统治，传播了资产阶级自由民主思想，具有世界性影响。</u>
+
+12. 《人权宣言》的内容：
+
+    1. <u>宣传自由、民主、平等，反对专制；</u>
+    2. <u>保护私有财产。</u>
+
+---
+
+<iframe src="/assets/summaries-blank/hw-6-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
 ### 第七单元 工业革命和共产主义运动的兴起
 
+---
+
+#### 第 20 课 第一次工业革命
+
+::: warning 重复提醒
+提纲为一二两次工业革命的比较，详见[九年级下册第二单元第 5 课 第二次工业革命](/世界历史/九年级下册/第二单元%20第二次工业革命和近代科学文化/#第-5-课-第二次工业革命)。
+:::
+
+---
+
+#### 第 21 课 马克思主义的诞生和国际共产主义运动的兴起
+
+::: info
+背的内容不多，因此没有提纲
+:::
+
+---
+
 <div class="divider"></div>
 
 ## 九年级上册
+
+::: tip 重要提醒
+九下开始，时间紧任务重，因此只上中考要考的内容。其余内容只做熟悉，没有默写提纲。
+:::
 
 <div class="divider"></div>
 
 ### 第一单元 殖民地人民的反抗与资本主义制度的扩展
 
+---
+
+#### 第 1 课 殖民地人民的反抗斗争
+
+---
+
+#### 第 2 课 俄国的改革
+
+---
+
+#### 第 3 课 美国内战
+
+---
+
+#### 第 4 课 日本明治维新
+
+---
+
 <div class="divider"></div>
 
 ### 第二单元 第二次工业革命和近代科学文化
+
+---
+
+#### 第 5 课 第二次工业革命
+
+1. 两次工业革命的比较
+
+   <table><thead><tr><th>项目</th><th>第一次工业革命</th><th>第二次工业革命</th></tr></thead><tbody><tr><th>开始时间</th><td><u>18世纪六七十年代</u></td><td><u>19世纪六七十年代</u></td></tr><tr><th>标志</th><td><u>蒸汽机的广泛运用</u></td><td><u>电力的广泛运用</u></td></tr><tr><th>动力机器及能源</th><td><u>蒸汽机（煤炭）</u></td><td><u>发电机和电动机（电力）、<br>内燃机（石油）</u></td></tr><tr><th>领先国家</th><td><u>英国</u></td><td><u>美国、德国等</u></td></tr><tr><th>进入时代</th><td><u>“蒸汽时代”</u></td><td><u>“电气时代”</u></td></tr><tr><th>新交通工具及发明者</th><td><u>火车（史蒂芬森）等</u></td><td><u>汽车（本茨）、<br>飞机（莱特兄弟）等</u></td></tr><tr><th rowspan="2">启示</th><td owspan="2" colspan="2"><ol><li><u>科学技术是第一生产力，创新是引领发展的第一动力；</u></li><li><u>实施科教兴国战略，加强科技创新；</u></li><li><u>发展经济的同时应注意保护环境。</u></li></ol></td></tr></tbody></table>
+
+2. 第一次工业是以<u>“工厂”</u>取代<u>“工场”</u>，以<u>机器生产</u>取代<u>手工劳动</u>的过程，最终确立起<u>现代工厂</u>制度。
+3. 1825年，<u>史蒂芬森</u>设计的蒸汽机车（火车）正式试车，标志着<u>铁路时代</u>的开始。
+4. 第一次工业革命的影响：
+    1. <u>极大地提高了社会生产力水平，人类进入“蒸汽时代”；</u>
+    2. <u>19世纪中期，英国已成为世界上第一个工业国家；</u>
+    3. <u>造成了新的社会矛盾，带来了环境污染等问题。</u>
+
+5. 英国资产阶级革命和英国工业革命的关系
+    1. <u>英国君主立宪制建立后，政局稳定；</u>
+    2. <u>资本主义经济迅速发展。</u>
+
+6. 第二次工业革命的特点：<u>科学研究同工业生产紧密结合</u>。
+7. 第二次工业革命的成果：
+    1. 1831年，英国科学家法拉第发现了<u>电磁感应现象</u>，人们根据这一现象发明了早期的<u>发电机</u>。
+    2. 美国发明家<u>爱迪生</u>发明了耐用的白炽灯泡等。
+    3. <u>电力成为新的能源进入生产生活领域</u>是第二次工业革命最显著的成就。
+    4. <u>诺贝尔</u>发明了现代炸药、无烟炸药，在军事、工程等方面得到了广泛应用。
+    5. 海厄特发明了赛璐珞的制造技术，<u>现代塑料工业</u>由此诞生。
+8. 第二次工业革命的影响：
+    1. <u>促进了生产力的发展，极大地改善了人们的生活，人类社会进入了“电气时代”；</u>
+    2. <u>一些资本主义国家成为工业化强国；</u>
+    3. <u>出现了垄断组织，资本主义向垄断资本主义即帝国主义逐渐过渡；</u>
+    4. <u>资本主义对外扩张的增强，对世界产生了深远的影响。</u>
 
 <div class="divider"></div>
 
@@ -6672,6 +7325,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 ---
 
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第二课 日益严峻的资源问题
@@ -6705,6 +7360,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
 
 ---
 
+<iframe src="/assets/summaries-blank/hg-6-1_2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 ### 第三课 共同关注的环境问题
@@ -6734,6 +7391,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
         3. <u>有利于建设美丽中国，实现中华民族的永续发展。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -6780,6 +7439,8 @@ PRED 问题，即 P(opulation), R(esource), E(nvironment), D(velopment)四大问
     3. <u>依法同浪费资源、破坏环境的行为做斗争。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -7673,6 +8334,227 @@ A --> B --> C --> D
 
 <div class="divider"></div>
 
+位于 D:\社政资料总整理\英语\index.md 的文件不存在。无法加入页面。
+<div class="divider"></div>
+
+## 九年级全一册
+
+- [Unit 1 How can we become good learners?](./Unit%201%20How%20can%20we%20become%20good%20learners/index.md)
+- [Unit 2 I think that mooncakes are delicious!](./Unit%202%20I%20think%20that%20mooncakes%20are%20delicious/index.md)
+- [Unit 3 Could you please tell me where are the restrooms are?](./Unit%203%20Could%20you%20please%20tell%20me%20where%20are%20the%20restrooms%20are/index.md)
+- [Unit 4 I used to be afraid of the dark.](./Unit%204%20I%20used%20to%20be%20afraid%20of%20the%20dark/index.md)
+- [Unit 5 What are the shirts made of?](./Unit%205%20What%20are%20the%20shirts%20made%20of/index.md)
+
+<div class="divider"></div>
+
+### Unit 1 How can we become good learners?
+
+---
+
+#### 全效学习错题
+
+1. 迈克通过使用词典扩大词汇量<br>
+   Mike enlarges his vocabulary by <u>using</u> <u>a</u> <u>dictionary</u>.
+2. The two girls got lost when they went <u>through</u> the forest.
+3. <u>By</u> talking to the robot called CIMON-2, the astronaut won't feel lonely in space.
+4. Lucy <u>fell in love with</u> sailing the first time she tried it. She thought it was so exciting. (`fall in love with` `be afraid of`)
+5. I like to take down the useful sentences <u>like</u> "It serves you right".
+6. It is a good idea to p<u>ronounce</u> new words aloud every day.
+7. Mr. Zhang is very glad that his salary <u>increases</u> (增加) a lot every year.
+8. Li Ming and I are not only friends but also good study <u>partners</u> (搭档).
+9. <u>Reviewing</u> (复习) what you have learned in time is helpful for you to get good grades.
+
+---
+
+#### Test for Unit 1 错题
+
+1. \- Excuse me, could you help me move the bag?<br>
+    \- Certainly, <u>it's piece of cake</u>. (`A`)<br>
+    A. `It's piece of cake`<br>
+    B. `Use it or lose it`<br>
+    C. `Practice makes perfect`<br>
+    D. `It serves you right`<br>
+2.  Tu Youyou won the Nobel Prize for medicine <u>through</u> (凭借) many years of hard work.
+3. it's a good habit to read English <u>aloud</u> (大声地) in the morning.
+
+---
+
+#### 全效·基础循环练错题
+
+---
+
+#### 周周清错题
+
+---
+
+<div class="divider"></div>
+
+### Unit 2 I think that mooncakes are delicious!
+
+---
+
+#### 全效学习错题
+
+1. What does your father like best <u>about</u> the Lantern Festival?
+2. How lucky you are! You can eat what you like but you never put <u>on</u> weight.
+3. There is nothing on the table. You may <u>lay</u> (放置) anything you like to eat on it.
+4. The Chinese enjoy the tradition of a<u>dmiring</u> the full moon on the Mid-Autumn night.
+5. I found that someone <u>stole</u> (steal) something from my room last night.
+6. He <u>flew</u> (fly) a kite with his friends in the park yesterday.
+7. Liu Mei swims well and she is a <u>fantastic</u> (极好的) swimmer.
+8. Mrs. Smart always w<u>arns</u> her students not to stay out late at night.
+
+---
+
+#### Test for Unit 2 错题
+
+1. He <u>used to</u> go out with his parents, but now he <u>is used to</u> staying at home alone. (`A`)<br>
+    A. `used to`; `is used to`<br>
+    B. `is used to`; `used to`<br>
+    C. `use to`; `is used to`<br>
+    D. `use to`; `used to`<br>
+
+2. Kitty asks <u>whether</u> there will <u>be snow</u> this winter. (`D`)<br>
+    A. `if`; `be snowy`<br>
+    B. `whether`; `have snow`<br>
+    C. `that`; `have snow`<br>
+    D. `whether`; `be snow`<br>
+
+---
+
+#### 全效·基础循环练错题
+
+---
+
+#### 周周清错题
+
+---
+
+<div class="divider"></div>
+
+### Unit 3 Could you please tell me where are the restrooms are?
+
+---
+
+#### 全效学习错题
+
+1. I beg your p<u>ardon</u>, sir. How will you deal with the problem?
+2. Could you please tell me the way to the post office? I want to buy some <u>stamps</u> (邮票).
+3. The doctor s<u>uggests</u> we should eat more vegetables and do sports.
+4. The little girl is nervous, so she <u>holds</u> (抓住) her mother's hands wherever they go.
+5. When the girl saw the snake, she was very <u>scared</u> (scare).
+6. I suggest <u>going</u> (go) to the Fun Times Park this weekend.
+7. They <u>mailed</u> (邮寄) letters to their fathers to show thanks to them yesterday.
+8. We all know the sum always rises in the e<u>ast</u> every morning.
+9. "Why are you late?" the teacher asked him.<br>
+   The teacher asked him why he <u>was</u> late.
+10. Are there any public washrooms around here? She wanted to know.<br>
+    She wanted to know if there <u>were</u> any public washrooms around here.
+11. The young man is waiting for his friend at the c<u>orner</u> of Main Street.
+12. The clerk s<u>uggests</u> the boy go to Green Land because they have delicious salads.
+13. The big supermarket is <u>uncrowded</u> (crowd) on weekdays. Most people are busy with their work.
+14. Anderson repeated his <u>request</u> (要求) that we put off the meeting.
+15. <u>On their way to</u> (`on one's way to`) the farm，they met their English teacher.
+16. More and more people like to buy books on the Internet as the books on the Internet are <u>inexpensive</u> (`expensive`).
+
+---
+
+#### Test for Unit 3 错题
+
+1. \- Where are you going for the coming winter vacation?<br>\- I won't decide on the place <u>until</u> the end of this month. (`A`)<br>A. `until`<br>B. `unless`<br>C. `at`<br>D. `through`
+2. \- I am very sad after hearing the earthquake of Yushu. But I don't know <u>what to do</u>.<br>\- You can raise your money to the charity.<br>A. `how I shoud do`<br>B. `how to do`<br>C. `what to do`<br>D. `what should I do`
+3. To my surprise, my hometown <u>has changed</u> a lot in the past two years. (`B`)<br>A. `had changed`<br>B. `has changed`<br>C. `have changed`<br>D. `changed`
+4. The boy said he often <u>played</u> soccer after school.
+
+---
+
+#### 全效·基础循环练错题
+
+---
+
+#### 周周清错题
+
+<iframe src="./%E5%91%A8%E5%91%A8%E6%B8%85%E9%94%99%E9%A2%98.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
+---
+
+<div class="divider"></div>
+
+### Unit 4 I used to be afraid of the dark.
+
+---
+
+#### 全效学习错题
+
+1. Neither Anna nor I <u>am interested in</u> (be interested in) history because we think it's boring.
+2. Judy d<u>ared</u> to live in a house alone, and she wasn't afraid.
+3. American English is different from B<u>ritish</u> English in pronunciation and spelling.
+4. Jim never got to work late, <u>did</u> <u>Jane</u>? (完成反意疑问句)
+5. I am old enough and I can wear w<u>hatever</u> I like.
+6. Our parents take p<u>ride</u> in everything good we do.
+7. My parents are always <u>thinking of</u> me even though they are busy with their work.
+8. The road to <u>success</u> (succeed) is always difficult. So don't give up until you make your dream come true.
+9. Mr. White doesn't know whether his son <u>has dealt with</u> (`deal with`) the problem so far.
+
+---
+
+#### Test for Unit 4 错题
+
+1. I think we need to improve our educational system in <u>general</u> (总的).
+2. The teacher <u>advised</u> (建议) the parents to talk with the kid in person.
+
+---
+
+#### 全效·基础循环练错题
+
+---
+
+#### 周周清错题
+
+---
+
+<div class="divider"></div>
+
+### Unit 5 What are the shirts made of?
+
+---
+
+#### 全效学习错题
+
+1. Sweaters may <u>be produced</u> (produce) in many different ways.
+2. Butter is made <u>from</u> milk.
+3. It is well-known <u>to</u> most people that Beijing is known as the capital of China.
+4. When you visit F<u>rance</u>, you can go to the Eiffel Tower and take photos there.
+5. This kind of cars <u>is produced</u> (produce) in China.
+6. Students <u>aren't allowed</u> to take smartphones to school.
+7. Those terrible accidents <u>were caused</u> by the careless drivers last year.
+8. Jack usually washes the car on Sunday.<br>
+   The car <u>is</u> usually washed by Jack on Sunday.
+9. 看看哪只风筝飞得最高是件很有趣的事情。<br>
+   It's really fun to <u>see</u> which kite flies the highest.
+10. The water can be h<u>eated</u> to become gas.
+11. I can't play soccer with you now because I have to c<u>omplete</u> my homework first.
+12. Jane tries to avoid <u>meeting</u> (meet) her cousin because he always makes her bored.
+13. Most of the <u>products</u> (product) are American products, but they are made in China.
+14. Usually, the most common things can <u>be turned into</u> (`turn info`) objects of beauty.
+15. Weifang, a city in Shandong Province, <u>has been known for</u> (`be known for`) making kites _since_ over 2,000 years ago.
+
+---
+
+#### Test for Unit 5 错题
+
+---
+
+#### 全效·基础循环练错题
+
+---
+
+#### 周周清错题
+
+---
+
+<div class="divider"></div>
+
 <div class="divider"></div>
 
 # 版权声明
@@ -7686,9 +8568,9 @@ A --> B --> C --> D
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -7697,7 +8579,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

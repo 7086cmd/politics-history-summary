@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -62,7 +71,7 @@
       - [第五课 守望精神家园](#第五课-守望精神家园)<br>
       - [第六课 建设美丽中国](#第六课-建设美丽中国)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第三单元 文明与家园
@@ -100,7 +109,7 @@
     2. <u>有利于实现中华民族伟大复兴；</u>
     3. <u>坚定文化自信，事关国运兴衰、文化安全和民族精神的传承和发展。</u>
 
-11. 如何坚定文化自信
+11. 如何坚定文化自信（如何发展中国特色社会主义文化）
 
     1. <u>坚持以马克思主义为指导；</u>
     2. <u>推动中华优秀传统文化创造性转化、创造性发展，继承革命文化，发展社会主义先进文化；</u>
@@ -162,9 +171,9 @@ PRED 重要知识点总结[于此](/整活资料/道德与法治/PRED问题)
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -173,7 +182,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

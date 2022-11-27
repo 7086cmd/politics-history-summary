@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import MermaidPlugin from "vitepress-plugin-mermaid"
 
 export default defineConfig({
-  title: "初中政史地提纲整理",
+  title: "7086cmd's notes",
   markdown: {
     config: MermaidPlugin,
   },
@@ -24,7 +24,11 @@ export default defineConfig({
       {
         text: "整活资料",
         link: "/整活资料/"
-      }
+      },
+      {
+        text: "英语",
+        link: "/英语/",
+      },
     ],
     sidebar: {
       "/道德与法治/": summary_ml(),
@@ -33,6 +37,7 @@ export default defineConfig({
       "/人文地理/": summary_hg(),
       "/整活资料/": summary_res(),
       "/语文/": summary_chinese(),
+      "/英语/": summary_english(),
     },
     algolia: {
       appId: "NJS8433FRA",
@@ -347,6 +352,10 @@ function summary_ml() {
           text: "第四单元 和谐与梦想",
           link: "/道德与法治/九年级上册/第四单元 和谐与梦想/",
         },
+        {
+          text: "默写与整理",
+          link: "/道德与法治/九年级上册/默写与整理/",
+        }
       ],
       collapsed: true,
       collapsible: true,
@@ -618,6 +627,38 @@ function summary_chinese() {
           link: "/语文/名著阅读/艾青诗选/",
         }
       ]
+    }
+  ]
+}
+
+function summary_english() {
+  return [
+    {
+      text: "九年级全一册",
+      items: [
+        {
+          text: "Unit 1 How can we become good learners?",
+          link: "/英语/九年级全一册/Unit 1 How can we become good learners/",
+        },
+        {
+          text: "Unit 2 I think that mooncakes are delicious!",
+          link: "/英语/九年级全一册/Unit 2 I think that mooncakes are delicious/",
+        },
+        {
+          text: "Unit 3 Could you please tell me where are the restrooms are?",
+          link: "/英语/九年级全一册/Unit 3 Could you please tell me where are the restrooms are/",
+        },
+        {
+          text: "Unit 4 I used to be afraid of the dark.",
+          link: "/英语/九年级全一册/Unit 4 I used to be afraid of the dark/",
+        },
+        {
+          text: "Unit 5 What are the shirts made of?",
+          link: "/英语/九年级全一册/Unit 5 What are the shirts made of/",
+        }
+      ],
+      collapsed: true,
+      collapsible: true,
     }
   ]
 }

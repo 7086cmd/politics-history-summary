@@ -88,3 +88,6 @@
     2. <u>我们要在网上传播正能量</u>。
 
 ---
+
+<iframe src="/assets/summaries-blank/ml-8-1-1-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-1-2.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

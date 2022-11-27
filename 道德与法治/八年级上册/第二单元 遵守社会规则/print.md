@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -63,7 +72,7 @@
       - [第四课 社会生活讲道德](#第四课-社会生活讲道德)<br>
       - [第五课 做守法的公民](#第五课-做守法的公民)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第二单元 遵守社会规则
@@ -227,6 +236,12 @@
 
     2. 在面对违法犯罪时，我们要<u>善于斗争</u>，在<u>保全自己</u>、<u>减少伤害</u>前提下，巧妙地借助他人或社会的力量，采取<u>机智灵活的方式</u>，同违法犯罪作斗争。
 
+---
+
+<iframe src="/assets/summaries-blank/ml-8-1-2-3.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+<iframe src="/assets/summaries-blank/ml-8-1-2-5.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
+
 <div class="divider"></div>
 
 <div class="divider"></div>
@@ -242,9 +257,9 @@
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -253,7 +268,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

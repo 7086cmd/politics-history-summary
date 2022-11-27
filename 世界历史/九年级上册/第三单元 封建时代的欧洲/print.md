@@ -3,7 +3,11 @@
   #title {
     padding-top: 40%;
     font-size: 96px;
-    padding-bottom: 24%;
+  }
+
+  #subtitle {
+    font-size: 36px;
+    padding-top: 18%;
   }
 
   #ending {
@@ -24,6 +28,10 @@
     font-size: 18px;
   }
 
+  #allinform {
+    padding-top: 18%;
+  }
+
   .topic {
     padding-top: 12%;
     padding-bottom: 8%;
@@ -32,8 +40,9 @@
 </style>
 <div class="center">
   <div id="title">{{ printTitle }}</div>
+  <div id="subtitle" v-if="documentTitle !== printTitle">{{ documentTitle }}</div>
 </div>
-<div class="right">
+<div class="right" id="allinform">
   <p id="inform">姓名：________________</p>
   <p id="inform">学号：________________</p>
   <p id="inform">班级：________________</p>
@@ -59,11 +68,73 @@
 </div>
 
     - [第三单元 封建时代的欧洲](#第三单元-封建时代的欧洲)<br>
+      - [第 7 课 基督教的兴起和法兰克王国](#第-7-课-基督教的兴起和法兰克王国)<br>
+      - [第 8 课 西欧庄园](#第-8-课-西欧庄园)<br>
+      - [第 9 课 中世纪城市和大学的兴起](#第-9-课-中世纪城市和大学的兴起)<br>
+      - [第 10 课 拜占庭帝国与《查士丁尼法典》](#第-10-课-拜占庭帝国与《查士丁尼法典》)<br>
 
-<div class="divider"></div>
+<div class="divider_top"></div>
 
 
 ### 第三单元 封建时代的欧洲
+
+---
+
+#### 第 7 课 基督教的兴起和法兰克王国
+
+#### 第 8 课 西欧庄园
+
+#### 第 9 课 中世纪城市和大学的兴起
+
+#### 第 10 课 拜占庭帝国与《查士丁尼法典》
+
+1. 1 世纪，在罗马帝国统治下的<u>巴勒斯坦</u>地区，基督教诞生，它的创始人是<u>耶稣</u>，4 世纪末，罗马皇帝将基督教确定为<u>国教</u>，促进了基督教的传播。
+
+2. 476 年，西罗马帝国灭亡后，西欧逐渐进入<u>封建社会</u>，欧洲人称之为“<u>中世纪</u>”。
+
+3. 481 年，克洛维建立<u>法兰克王国</u>。
+
+4. 赐地的人成为<u>封君</u>，接受封地的人成为<u>封臣</u>，两者的关系有着严格的<u>等级性</u>，而且权利、义务交织在一起，有一定的<u>契约</u>意义。11 世纪，这种以<u>土地的封赐为纽带</u>而形成的<u>封建制度</u>在西欧已经普遍存在。
+
+5. 800 年，教皇在罗马为<u>查理</u>举行了加冕礼，他统治时期的法兰克王国，史称“<u>查理曼帝国</u>”。843 年，他的子孙将帝国一分为三，形成以后的<u>德意志</u>、<u>法兰西</u>和<u>意大利</u>三个国家的雏形。
+
+6. 西欧中世纪乡村的典型组织形式是<u>庄园</u>。
+
+7. 西欧封建国家的主要特点：<br>
+   政治：封建等级制度；<br>
+   经济：<br>
+
+    1. <u>庄园经济盛行一时；</u>
+    2. <u>城市兴起。</u>
+
+    文化：
+
+    1. <u>基督教占统治地位，控制人们的思想；</u>
+    2. <u>大学兴起。</u>
+
+8. 城市的基本居民包括<u>手工工匠</u>和<u>商人</u>。随着城市的发展和工商业的繁荣，<u>市民阶层</u>逐渐形成，后出现商人和银行家等，他们成为早期的<u>资产阶级</u>。城市兴起的根本原因是<u>生产力的提高</u>。
+
+9. 城市自治斗争的常用手段<u>金钱赎买</u>和<u>武力斗争</u>。其中最为典型的是法兰西的<u>琅城</u>。
+
+10. 为了避免同行之间的恶性竞争，维护行业的共同利益，同时防止封建领主的侵犯，城市中出现了<u>行会</u>。
+
+11. <u>大学的兴起</u>被认为是欧洲中世纪教育“最美好的花朵”。
+
+12. 罗马三次征服世界：
+
+    1. 以武力征服世界：<u>2 世纪，罗马帝国的版图横跨欧亚非三洲，地中海成了“内湖”。</u>
+    2. 以宗教征服世界：<u>基督教成为世界三大宗教之一。</u>
+    3. 以法律征服世界：
+        1. <u>《十二铜表法》是后世罗马法典乃至欧洲法学的渊源；</u>
+        2. <u>《罗马民法大全》奠定了欧洲民法的基础。</u>
+
+13. 在 527 年，<u>查士丁尼</u>继任为东罗马帝国皇帝，东罗马帝国又称为“<u>拜占庭帝国</u>”，在其执政时期，编制了<u>《查士丁尼法典》</u>、《法学会纂》、《法理概要》、《新法典》，统称为<u>《罗马民法大全》</u>，其局限性表现为<u>仍然承认奴隶制</u>，不过还对财产、买卖、债务、契约关系等作出明确规定，又奠定了<u>欧洲民法的基础</u>。
+
+14. 1453 年，<u>奥斯曼帝国</u>攻破君士坦丁堡，改名为伊斯坦布尔，拜占庭帝国最终灭亡。
+
+---
+
+<iframe src="/assets/summaries-blank/hw-3-1.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
 
@@ -80,9 +151,9 @@
 <script setup>
 import { ref } from "vue";
 
-const printTitle = ref(new URL(location.href).pathname === '/print' ? "政史地总资料" : document.title
-.split("|")[0]
-.trim());
+const printTitle = ref(decodeURI(new URL(location.href).pathname.split("/")[1])) ?? "政史地总资料";
+
+const documentTitle = ref(decodeURI(new URL(location.href).pathname.split("/").filter(x => (x !== "" && x !== "print")).join(" | "))) ?? "政史地总资料";
 
 const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
 
@@ -91,7 +162,7 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 <div class="divider_top"></div>
 
 <div class="center">
-  <div id="ending">初中政史地提纲整理</div>
+  <div id="ending">7086cmd's notes</div>
 </div>
 
 <div class="right">

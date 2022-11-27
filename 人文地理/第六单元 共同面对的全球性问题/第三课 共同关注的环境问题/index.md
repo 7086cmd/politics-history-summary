@@ -25,3 +25,5 @@
         3. <u>有利于建设美丽中国，实现中华民族的永续发展。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>

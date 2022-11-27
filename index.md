@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "政史地提纲整理"
-  text: "在这里背诵！"
-  tagline: "蛟川书院2023届的政史地所有提纲整理"
+  name: "7086cmd's notes"
+  text: "Write notes here!"
+  tagline: "All of the subjects!"
   actions:
     - theme: brand
       text: 开始学习

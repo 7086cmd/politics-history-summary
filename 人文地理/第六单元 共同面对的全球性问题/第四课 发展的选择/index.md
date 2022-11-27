@@ -41,3 +41,5 @@
     3. <u>依法同浪费资源、破坏环境的行为做斗争。</u>
 
 ---
+
+<iframe src="/assets/summaries-blank/hg-6-3_4.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
