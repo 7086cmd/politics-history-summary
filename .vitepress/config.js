@@ -654,47 +654,47 @@ function summary_english() {
       items: [
         {
           text: "Unit 1 How can we become good learners?",
-          link: "/英语/九年级全一册/Unit 1 How can we become good learners/",
+          link: "/英语/九年级全一册/u1/",
         },
         {
           text: "Unit 2 I think that mooncakes are delicious!",
-          link: "/英语/九年级全一册/Unit 2 I think that mooncakes are delicious/",
+          link: "/英语/九年级全一册/u2/",
         },
         {
           text: "Unit 3 Could you please tell me where are the restrooms are?",
-          link: "/英语/九年级全一册/Unit 3 Could you please tell me where are the restrooms are/",
+          link: "/英语/九年级全一册/u3/",
         },
         {
           text: "Unit 4 I used to be afraid of the dark.",
-          link: "/英语/九年级全一册/Unit 4 I used to be afraid of the dark/",
+          link: "/英语/九年级全一册/u4/",
         },
         {
           text: "Unit 5 What are the shirts made of?",
-          link: "/英语/九年级全一册/Unit 5 What are the shirts made of/",
+          link: "/英语/九年级全一册/u5/",
         },
         {
           text: "Unit 6 When was it invented?",
-          link: "/英语/九年级全一册/Unit 6 When was it invented/",
+          link: "/英语/九年级全一册/u6/",
         },
         {
           text: "Unit 7 Teenagers should be allowed to choose ther own clothes.",
-          link: "/英语/九年级全一册/Unit 7 Teenagers should be allowed to choose ther own clothes/",
+          link: "/英语/九年级全一册/u7/",
         },
         {
           text: "Unit 8 It must belong to Carla.",
-          link: "/英语/九年级全一册/Unit 8 It must belong to Carla/",
+          link: "/英语/九年级全一册/u8/",
         },
         {
           text: "Unit 9 I like music that I can dance to.",
-          link: "/英语/九年级全一册/Unit 9 I like music that I can dance to/",
+          link: "/英语/九年级全一册/u9/",
         },
         {
           text: "Unit 10 You're supposed to shake hands.",
-          link: "/英语/九年级全一册/Unit 10 You're supposed to shake hands/",
+          link: "/英语/九年级全一册/u10/",
         },
         {
           text: "Unit 11 Sad movies make me cry.",
-          link: "/英语/九年级全一册/Unit 11 Sad movies make me cry/",
+          link: "/英语/九年级全一册/u11/",
         }
       ],
       collapsed: true,
