@@ -1,80 +1,84 @@
 import { defineConfig } from "vitepress";
-import MermaidPlugin from "vitepress-plugin-mermaid"
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-export default defineConfig({
-  title: "7086cmd's notes",
-  markdown: {
-    config: MermaidPlugin,
-  },
-  themeConfig: {
-    nav: [
-      { text: "首页", link: "/" },
-      {
-        text: "道德与法治",
-        link: "/道德与法治/",
+export default withMermaid(
+  defineConfig({
+    title: "7086cmd's notes",
+    themeConfig: {
+      nav: [
+        { text: "首页", link: "/" },
+        {
+          text: "道德与法治",
+          link: "/道德与法治/",
+        },
+        {
+          text: "历史与社会",
+          items: [
+            { text: "中国历史", link: "/中国历史/" },
+            { text: "世界历史", link: "/世界历史/" },
+            { text: "人文地理", link: "/人文地理/" },
+          ],
+        },
+        {
+          text: "整活资料",
+          link: "/整活资料/",
+        },
+        {
+          text: "语文",
+          link: "/语文/",
+        },
+        {
+          text: "英语",
+          link: "/英语/",
+        },
+      ],
+      sidebar: {
+        "/道德与法治/": summary_ml(),
+        "/中国历史/": summary_ch(),
+        "/世界历史/": summary_hw(),
+        "/人文地理/": summary_hg(),
+        "/整活资料/": summary_res(),
+        "/语文/": summary_chinese(),
+        "/英语/": summary_english(),
       },
-      {
-        text: "历史与社会",
-        items: [
-          { text: "中国历史", link: "/中国历史/" },
-          { text: "世界历史", link: "/世界历史/" },
-          { text: "人文地理", link: "/人文地理/" },
-        ],
+      algolia: {
+        appId: "NJS8433FRA",
+        apiKey: "7c80a203400079b048e02bdfe4f555bd",
+        indexName: "zsd_summary",
       },
-      {
-        text: "整活资料",
-        link: "/整活资料/"
+      localeLinks: {
+        text: "简体中文",
+        items: [],
       },
-      {
-        text: "英语",
-        link: "/英语/",
+      footer: {
+        message:
+          "These content are followed CC-BY&NC&ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.",
+        copyright: "Copyright © 2020-2023 7086cmd",
       },
-    ],
-    sidebar: {
-      "/道德与法治/": summary_ml(),
-      "/中国历史/": summary_ch(),
-      "/世界历史/": summary_hw(),
-      "/人文地理/": summary_hg(),
-      "/整活资料/": summary_res(),
-      "/语文/": summary_chinese(),
-      "/英语/": summary_english(),
-    },
-    algolia: {
-      appId: "NJS8433FRA",
-      apiKey: "7c80a203400079b048e02bdfe4f555bd",
-      indexName: "zsd_summary",
-    },
-    localeLinks: {
-      text: "简体中文",
-      items: [],
-    },
-    footer: {
-      message: "These content are followed CC-BY&NC&ND 4.0. So, it is not allowed to edit or use for business unless the author agrees.",
-      copyright: "Copyright © 2020-2023 7086cmd",
-    },
-    socialLinks: [
-      {
-        icon: "github",
-        link: "https://github.com/7086cmd/politics-history-summary",
+      socialLinks: [
+        {
+          icon: "github",
+          link: "https://github.com/7086cmd/politics-history-summary",
+        },
+      ],
+      editLink: {
+        pattern:
+          "https://github.com/7086cmd/politics-history-summary/edit/summary/:path",
+        text: "编辑页面内容",
       },
-    ],
-    editLink: {
-      pattern:
-        "https://github.com/7086cmd/politics-history-summary/edit/summary/:path",
-      text: "编辑页面内容",
+      docFooter: {
+        prev: "上一章",
+        next: "下一章",
+      },
+      lastUpdatedText: "本文最后更改日期",
+      outlineTitle: "本文目录",
     },
-    docFooter: {
-      prev: "上一章",
-      next: "下一章",
-    },
-    lastUpdatedText: "本文最后更改日期",
-    outlineTitle: "本文目录",
-  },
-  lastUpdated: true,
-  lang: "zh-CN",
-  ignoreDeadLinks: true,
-  cleanUrls: "without-subfolders",
-});
+    lastUpdated: true,
+    lang: "zh-CN",
+    ignoreDeadLinks: true,
+    cleanUrls: "without-subfolders",
+  })
+);
 
 function summary_hg() {
   return [
@@ -305,7 +309,7 @@ function summary_ml() {
         {
           text: "《习近平新时代中国特色社会主义思想学生读本》",
           link: "/道德与法治/八年级上册/《习近平新时代中国特色社会主义思想学生读本》/",
-        }
+        },
       ],
       collapsed: true,
       collapsible: true,
@@ -355,7 +359,7 @@ function summary_ml() {
         {
           text: "默写与整理",
           link: "/道德与法治/九年级上册/默写与整理/",
-        }
+        },
       ],
       collapsed: true,
       collapsible: true,
@@ -582,7 +586,7 @@ function summary_res() {
         {
           text: "PRED 问题",
           link: "/整活资料/道德与法治/PRED问题",
-        }
+        },
       ],
     },
     {
@@ -613,8 +617,8 @@ function summary_res() {
           link: "/整活资料/历史与社会/八下历史与社会复习提纲",
         },
       ],
-    }
-  ]
+    },
+  ];
 }
 
 function summary_chinese() {
@@ -625,10 +629,22 @@ function summary_chinese() {
         {
           text: "《艾青诗选》",
           link: "/语文/名著阅读/艾青诗选/",
-        }
-      ]
-    }
-  ]
+        },
+        {
+          text: "《泰戈尔诗选》",
+          link: "/语文/名著阅读/泰戈尔诗选/",
+        },
+        {
+          text: "《水浒传》",
+          link: "/语文/名著阅读/水浒传/",
+        },
+        {
+          text: "《聊斋志异》",
+          link: "/语文/名著阅读/聊斋志异/",
+        },
+      ],
+    },
+  ];
 }
 
 function summary_english() {
@@ -655,10 +671,34 @@ function summary_english() {
         {
           text: "Unit 5 What are the shirts made of?",
           link: "/英语/九年级全一册/Unit 5 What are the shirts made of/",
+        },
+        {
+          text: "Unit 6 When was it invented?",
+          link: "/英语/九年级全一册/Unit 6 When was it invented/",
+        },
+        {
+          text: "Unit 7 Teenagers should be allowed to choose ther own clothes.",
+          link: "/英语/九年级全一册/Unit 7 Teenagers should be allowed to choose ther own clothes/",
+        },
+        {
+          text: "Unit 8 It must belong to Carla.",
+          link: "/英语/九年级全一册/Unit 8 It must belong to Carla/",
+        },
+        {
+          text: "Unit 9 I like music that I can dance to.",
+          link: "/英语/九年级全一册/Unit 9 I like music that I can dance to/",
+        },
+        {
+          text: "Unit 10 You're supposed to shake hands.",
+          link: "/英语/九年级全一册/Unit 10 You're supposed to shake hands/",
+        },
+        {
+          text: "Unit 11 Sad movies make me cry.",
+          link: "/英语/九年级全一册/Unit 11 Sad movies make me cry/",
         }
       ],
       collapsed: true,
       collapsible: true,
-    }
-  ]
+    },
+  ];
 }

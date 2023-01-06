@@ -86,11 +86,15 @@
 
 ## 八年级下册
 
+---
+
 ::: warning 重要提醒
 八年级下册的道法是 **重中之重** ，而然，很多内容都出自于宪法。熟读宪法是熟悉本册道法的良好方法。
 :::
 
 全册皆为重要内容，请认真背诵。
+
+---
 
 <div class="divider"></div>
 
@@ -561,16 +565,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -582,7 +576,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

@@ -82,7 +82,7 @@
 
 #### 第 14 课 阿拉伯帝国
 
-1. 古代史上，日本在亚洲拜认了第一位老师，并向老师学习，该老师是<u>中国（唐朝）</u>，学习指的是<u>大化改新</u><br>
+1. 古代史上，日本在亚洲拜认了第一位老师，并向老师学习，该老师是<u>中国（唐朝）</u>，学习指的是<u>大化改新</u>。<br>
    该事件的内容有：
 
    1. 政治上
@@ -104,13 +104,9 @@
 3. 8世纪中期，世界上疆域最大的帝国是：<u>阿拉伯帝国</u><br>
    地跨<u>欧亚非</u>三大洲，历史上这样的帝国还有<u>亚历山大帝国</u>、<u>罗马帝国</u>、<u>东罗马帝国（拜占庭帝国）</u>。
 
-4. 阿拉伯文化成就：
-   数学：
-
-   1. <u>“阿拉伯数字”；</u>
-   2. <u>代数学；</u>
-
-   医学：《<u>医学集成</u>》和《<u>医典</u>》长期被欧洲医学界奉为经典。
+4. 阿拉伯文化成就：<br>
+   数学：<u>“阿拉伯数字”；代数学；</u><br>
+   医学：《<u>医学集成</u>》和《<u>医典</u>》长期被欧洲医学界奉为经典。<br>
    文学：《<u>天方夜谭</u>》是阿拉伯文学的瑰宝。
 
 5. 世界三大宗教：
@@ -130,16 +126,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -151,7 +137,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

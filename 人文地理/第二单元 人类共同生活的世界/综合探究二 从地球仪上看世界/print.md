@@ -78,12 +78,12 @@
 
 1. 经线指示<u>南北</u>方向，纬线指示<u>东西</u>方向。
 
-2. 东西半球的分界线是<u>20°W</u>，<u>160°E</u>；
-   东西经的划分界限是<u>本初子午线（0°）</u>；
+2. 东西半球的分界线是<u>20°W</u>，<u>160°E</u>；<br>
+   东西经的划分界限是<u>本初子午线（0°）</u>。
 
 3. 南北半球的划分是以<u>赤道（0°）</u>来划分。
 
-4. 东经的代号是<u>E</u>(ast)，西经的代号是<u>W</u>(est)，北纬的代号是<u>N</u>(orth)，南纬的代号是<u>S</u>(outh)。
+4. 东经的代号是<u>E</u>*(ast)*，西经的代号是<u>W</u>*(est)*，北纬的代号是<u>N</u>*(orth)*，南纬的代号是<u>S</u>*(outh)*。
 
 5. 维度带的划分
 
@@ -92,15 +92,10 @@
     | 纬度范围       | <u>30°N—0°<br>0°—30°S</u> | <u>30°N—60°N<br>30°S—60°S</u> | <u>60°N—90°N<br>60°S—90°S</u> |
 
 6. 五带的划分
-
     ![img](/assets/hg-2-5-1.gif)
-
-    1. 五带的纬度范围：A<u>66.5°N—90°N</u>；B<u>23.5°N—66.5°N</u>；C<u>23.5°N—23.5°S</u>；
-
+    1. 五带的纬度范围：A<u>66.5°N—90°N</u>；B<u>23.5°N—66.5°N</u>；C<u>23.5°N—23.5°S</u>；<br>
     D<u>23.5°S—66.5°S</u>；E<u>66.5°S—90°S</u>。
-
-    2. 填写纬线的名称与纬度：1<u>北极圈</u>：<u>66.5°N</u>；2<u>北回归线</u>：<u>23.5°N</u>；
-
+    2. 填写纬线的名称与纬度：1<u>北极圈</u>：<u>66.5°N</u>；2<u>北回归线</u>：<u>23.5°N</u>；<br>
     3<u>南回归线</u>：<u>23.5°S</u>；4<u>南极圈</u>：<u>66.5°S</u>。
 
 7. 中国之”最“
@@ -115,16 +110,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -136,7 +121,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

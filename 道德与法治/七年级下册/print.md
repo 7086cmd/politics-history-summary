@@ -88,7 +88,11 @@
 
 ## 七年级下册
 
+---
+
 七年级下册的内容，中考要点，只有 **[第四单元 走进法治天地](./%E7%AC%AC%E5%9B%9B%E5%8D%95%E5%85%83%20%E8%B5%B0%E8%BF%9B%E6%B3%95%E6%B2%BB%E5%A4%A9%E5%9C%B0/)**，而且是对于法律的初探，处于重中之重。
+
+---
 
 <div class="divider"></div>
 
@@ -528,16 +532,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -549,7 +543,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

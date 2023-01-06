@@ -125,9 +125,7 @@
 
 4. 探寻新航路辟的经过（按照先后顺序）：
 
-   | 人物 | <u>迪亚士</u>          | <u>哥伦布</u>    | <u>达·伽马</u>   | <u>麦哲伦船队</u> |
-   | ---- | ---------------------- | ---------------- | ---------------- | ----------------- |
-   | 航线 | <u>西欧—非洲好望角</u> | <u>西欧—美洲</u> | <u>西欧—印度</u> | <u>环球航行</u>   |
+   <table><thead><tr><th>人物</th><td><u>迪亚士</u></td><td><u>哥伦布</u></td><td><u>达·伽马</u></td><td><u>麦哲伦船队</u></td></tr></thead><tbody><tr><th>航线</th><td><u>西欧—非洲好望角</u></td><td><u>西欧—美洲</u></td><td><u>西欧—印度</u></td><td><u>环球航行</u></td></tr></tbody></table>
 
 5. 最早到达印度的航海家：<u>达·伽马</u>；<br>
    最早发现美洲新大陆的航海家：<u>哥伦布</u>；<br>
@@ -161,16 +159,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -182,7 +170,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

@@ -11,10 +11,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mermaid": "^9.1.6",
-    "vitepress": "^1.0.0-alpha.8",
-    "vitepress-plugin-mermaid": "^1.0.2",
-    "vue": "^3.2.37"
+    "@nuxt/kit": "^3.0.0-rc.9",
+    "@types/node": ">=14.0.0",
+    "mermaid": "9.1.6",
+    "postcss": "^8.2.14",
+    "vite-plugin-md": "^0.20.4",
+    "vitepress": "1.0.0-alpha.33",
+    "vitepress-plugin-mermaid": "^2.0.8",
+    "vue": "^3.2.45"
   },
   "type": "module"
 }

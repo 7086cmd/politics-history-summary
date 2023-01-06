@@ -96,8 +96,8 @@
     | 火的使用 | <u>知道使用火</u>       | <u>已学会使用火，还会保存火种</u> | <u>懂得人工取火</u>                           |
     | 意识观念 | /                       | /                                 | <u>有爱美意识，也会埋葬逝者</u>               |
 
-    组织形式：<u>结成群体生活在一起，使用公有的工具，共同劳动，共同分配食物，没有贫富贵贱的差别，依靠群体的力量生存</u>
-    生活时代：<u>旧石器时代</u>
+    组织形式：<u>结成群体生活在一起，使用公有的工具，共同劳动，共同分配食物，没有贫富贵贱的差别，依靠群体的力量生存</u>；<br>
+    生活时代：<u>旧石器时代</u>。
 
 4. 火的使用对原始人类生存和进化的作用
 
@@ -188,16 +188,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -209,7 +199,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

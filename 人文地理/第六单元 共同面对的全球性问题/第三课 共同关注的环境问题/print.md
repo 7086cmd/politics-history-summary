@@ -92,8 +92,8 @@
 
 3. 加快改善我国生态环境的原因：
     1. 生态环境重要性角度：<u>生态环境是生存之本、发展之源</u>
-    2. 环境现状及危害角度：
-       现状：<u>目前，我国环境形式依然不容乐观、人民日益增长的对美好生态环境的需求，还不能得到充分的满足。</u>
+    2. 环境现状及危害角度：<br>
+       现状：<u>目前，我国环境形式依然不容乐观、人民日益增长的对美好生态环境的需求，还不能得到充分的满足。</u><br>
        危害：<u>环境问题不仅危害人们的健康，制约了我国的经济发展，还影响社会安定。成为威胁中华民族生存与发展的重大问题。</u>
     3. 意义角度：
         1. <u>保护和改善环境，满足人民日益增长的对美好生态环境的需求；</u>
@@ -106,16 +106,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -127,7 +117,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

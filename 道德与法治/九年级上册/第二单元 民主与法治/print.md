@@ -201,7 +201,7 @@
 11. 法治和德治的关系
     1. <u>法律与道德相辅相成，法治与德治相得益彰，共同发挥作用</u>；
     2. <u>既重视发挥法律的规范作用，又重视发挥道德的教化作用</u>；
-    3. <u>强化法律对道德建设的促进作用，强化到的对法治文化的支撑作用</u>。
+    3. <u>强化法律对道德建设的促进作用，强化道德对法治文化的支撑作用</u>。
 
 ---
 
@@ -210,16 +210,6 @@
 <iframe src="/assets/summaries-blank/ml-g91-2-4.pdf" frameborder="0" width="100%" height="40%" type="application/pdf"></iframe>
 
 <div class="divider"></div>
-
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
 
 <script setup>
 import { ref } from "vue";
@@ -232,7 +222,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

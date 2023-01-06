@@ -89,12 +89,16 @@
 
 ## 八年级上册
 
+---
+
 重要内容：
 
 -   [第二课 网络生活新空间](/道德与法治/八年级上册/第一单元%20走进社会生活/#第二课-网络生活新空间)
 -   [第三课 社会生活离不开规则](/道德与法治/八年级上册/第二单元%20遵守社会规则/#第三课-社会生活离不开规则)
 -   [第五课 做守法的公民](/道德与法治/八年级上册/第二单元%20遵守社会规则/#第五课-做守法的公民)
 -   [第四单元 维护国家利益](/道德与法治/八年级上册/第四单元%20维护国家利益/)
+
+---
 
 <div class="divider"></div>
 
@@ -538,16 +542,6 @@
 
 <div class="divider"></div>
 
-<div class="divider"></div>
-
-# 版权声明
-
-作者: [7086cmd](https://github.com/7086cmd).<br>
-
-<p style="font-size: 24px">
-本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
-</p>
-
 <script setup>
 import { ref } from "vue";
 
@@ -559,7 +553,13 @@ const printDate = ref(`导出日期：${new Date().toLocaleDateString()} ${new D
 
 </script>
 
-<div class="divider_top"></div>
+# 版权声明
+
+作者: [7086cmd](https://github.com/7086cmd).<br>
+
+<p style="font-size: 24px">
+本文遵循 <code>CC BY-NC-SA 4.0</code> 协议。未经允许，请勿擅自改动、商用这些内容，并且若转载请注明出处。
+</p>
 
 <div class="center">
   <div id="ending">7086cmd's notes</div>

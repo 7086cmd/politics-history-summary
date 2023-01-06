@@ -26,6 +26,9 @@
 
 #### Test for Unit 5 错题
 
+1. The telephone was invented <u>in 1876</u>. (划线提问)<br>
+    <u>When</u> was the telephone invented?
+
 ---
 
 #### 全效·基础循环练错题

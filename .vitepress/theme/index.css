@@ -17,11 +17,11 @@ iframe {
 }
 
 mark {
-  background-color: #43B88477;
+  background-color: #43b88477;
 }
 
 body::selection {
-  background-color: #43B884bb;
+  background-color: #43b884bb;
 }
 
 body {
@@ -66,8 +66,12 @@ body {
   body {
     /* font-family: "仿宋" !important; */
     zoom: 80%;
-    color: #000000
+    color: #000000;
   }
 
+  h2 {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
 
 }
