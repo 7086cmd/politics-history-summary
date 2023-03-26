@@ -22,11 +22,3 @@
 1. _A <u>Midsummer</u> (仲夏) Night's Dream_ is one of the comic masterpieces of Shakespeare.
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----

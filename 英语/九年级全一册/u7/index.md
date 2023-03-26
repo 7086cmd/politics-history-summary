@@ -26,11 +26,3 @@
 2. As teenagers, we should make our <u>chioces</u> (选择).
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----

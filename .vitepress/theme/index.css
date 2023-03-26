@@ -31,6 +31,12 @@ body {
   /* font-family: "仿宋" !important; */
 }
 
+table {
+  table-layout: fixed !important;
+  border: 1px #000000 !important;
+  border-collapse: collapse !important;
+}
+
 @media print {
   footer {
     display: none;
@@ -42,6 +48,12 @@ body {
 
   .VPLocalNav {
     display: none !important;
+  }
+
+  table {
+    table-layout: fixed !important;
+    border: 1px #000000 !important;
+    border-collapse: collapse !important;
   }
 
   h1 {
@@ -73,5 +85,4 @@ body {
     break-before: page !important;
     page-break-before: always !important;
   }
-
 }

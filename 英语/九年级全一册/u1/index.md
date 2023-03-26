@@ -29,11 +29,3 @@
 3. it's a good habit to read English <u>aloud</u> (大声地) in the morning.
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----

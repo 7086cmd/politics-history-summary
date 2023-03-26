@@ -26,11 +26,3 @@
 2. I need an <u>instrument</u> (工具，仪器) to finish this task.
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----

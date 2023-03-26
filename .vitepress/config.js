@@ -31,6 +31,14 @@ export default withMermaid(
           text: "英语",
           link: "/英语/",
         },
+        {
+          text: "社会总复习",
+          items: [
+            { text: "道德与法治", link: "/总复习/道德与法治/" },
+            { text: "历史与社会—中国历史", link: "/总复习/中国历史/" },
+            { text: "历史与社会—世界历史", link: "/总复习/世界历史/" },
+          ]
+        }
       ],
       sidebar: {
         "/道德与法治/": summary_ml(),
@@ -38,8 +46,7 @@ export default withMermaid(
         "/世界历史/": summary_hw(),
         "/人文地理/": summary_hg(),
         "/整活资料/": summary_res(),
-        "/语文/": summary_chinese(),
-        "/英语/": summary_english(),
+        "/总复习/": summary_rev(),
       },
       algolia: {
         appId: "NJS8433FRA",
@@ -574,6 +581,64 @@ function summary_hw() {
   ];
 }
 
+
+function summary_rev() {
+  return [
+    {
+      text: "道德与法治",
+      items: [
+        {
+          text: "模块一 生命健康与道德教育",
+          link: "/总复习/道德与法治/模块一 生命健康与道德教育/",
+        },
+        {
+          text: "模块二 法治教育",
+          link: "/总复习/道德与法治/模块二 法治教育/",
+        },
+        {
+          text: "模块三 国情教育",
+          link: "/总复习/道德与法治/模块三 国情教育/",
+        },
+        {
+          text: "附录",
+          link: "/总复习/道德与法治/附录/",
+        },
+      ],
+    },
+    {
+      text: "中国历史",
+      items: [
+        {
+          text: "模块一 中国古代史",
+          link: "/总复习/中国历史/模块一 中国古代史/",
+        },
+        {
+          text: "模块二 中国近代史",
+          link: "/总复习/中国历史/模块二 中国近代史/",
+        },
+      ],
+    },
+    {
+      text: "世界历史",
+      items: [
+        {
+          text: "模块一 世界古代史",
+          link: "/总复习/世界历史/模块一 世界古代史/",
+        },
+        {
+          text: "模块二 世界近代史",
+          link: "/总复习/世界历史/模块二 世界近代史/",
+        },
+        {
+          text: "模块三 世界现代史",
+          link: "/总复习/世界历史/模块三 世界现代史/",
+        },
+      ],
+    },
+  ];
+}
+
+
 function summary_res() {
   return [
     {
@@ -691,10 +756,6 @@ function summary_english() {
         {
           text: "Unit 10 You're supposed to shake hands.",
           link: "/英语/九年级全一册/u10/",
-        },
-        {
-          text: "Unit 11 Sad movies make me cry.",
-          link: "/英语/九年级全一册/u11/",
         }
       ],
       collapsed: true,
@@ -702,3 +763,4 @@ function summary_english() {
     },
   ];
 }
+

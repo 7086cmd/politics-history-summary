@@ -30,11 +30,3 @@
     <u>When</u> was the telephone invented?
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----

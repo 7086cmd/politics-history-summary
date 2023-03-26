@@ -34,12 +34,3 @@
 
 ---
 
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
-<iframe src="./%E5%91%A8%E5%91%A8%E6%B8%85%E9%94%99%E9%A2%98.pdf" frameborder="0" width="100%" type="application/pdf"></iframe>
-
----

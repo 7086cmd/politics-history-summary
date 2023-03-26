@@ -22,11 +22,3 @@
 2. The teacher <u>advised</u> (建议) the parents to talk with the kid in person.
 
 ---
-
-#### 全效·基础循环练错题
-
----
-
-#### 周周清错题
-
----
