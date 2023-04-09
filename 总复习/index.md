@@ -119,7 +119,7 @@
 
 ---
 
-<!--@include: ./道德与法治/附录/index.md-->
+<!--@include: ./附录/index.md-->
 
 
 ## 祝福语
