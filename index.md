@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "7086cmd's notes"
-  text: "Write notes here!"
+  text: "Notes here!"
   tagline: "All of the subjects!"
   actions:
     - theme: brand

@@ -7,6 +7,6 @@ import "./vars.css";
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    // app.component("Mermaid", Mermaid);
+    app.component("Keyword", () => import("./components/Keyword.vue"));
   },
 };

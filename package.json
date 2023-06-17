@@ -16,7 +16,7 @@
     "mermaid": "9.1.6",
     "postcss": "^8.2.14",
     "vite-plugin-md": "^0.20.4",
-    "vitepress": "1.0.0-alpha.61",
+    "vitepress": "1.0.0-alpha.74",
     "vitepress-plugin-mermaid": "^2.0.8",
     "vue": "^3.2.45"
   },
