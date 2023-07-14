@@ -106,10 +106,10 @@ th {
     color: #000000;
   }
 
-  h2, h3 {
+  /* h2, h3 {
     break-before: page !important;
     page-break-before: always !important;
-  }
+  } */
 }
 
 @font-face {
